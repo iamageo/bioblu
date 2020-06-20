@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo_cruz"
+    android:background="@drawable/landscape"
     tools:context="com.bioblu.first_law.activity_questao">
 
     <RelativeLayout

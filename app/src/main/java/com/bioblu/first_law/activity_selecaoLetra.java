@@ -114,7 +114,7 @@ public class activity_selecaoLetra extends AppCompatActivity  {
 
     @SuppressLint("ClickableViewAccessibility")
     private void initTela() {
-        RelativeLayout Rlayout = findViewById(R.id.relativeLayoutconceito);
+        RelativeLayout Rlayout = findViewById(R.id.relativeLayoutSelecaoLetra);
 
         Rlayout.setOnTouchListener(new OuvinteDeToque(this, screenWidth, y) {
             @Override

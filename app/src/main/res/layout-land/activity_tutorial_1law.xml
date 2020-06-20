@@ -4,20 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo_cruz"
+    android:background="@drawable/landscape"
     tools:context="com.bioblu.first_law.activity_tutorial_1law">
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout_tutorial1law"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/fundo_cruz"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </RelativeLayout>
 
     <ImageView
         android:id="@+id/law1_filho3"
@@ -136,6 +124,18 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline42"
         app:layout_constraintStart_toStartOf="@+id/guideline41" />
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout_tutorial1law"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/landscape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
     <android.support.constraint.Guideline
         android:id="@+id/guideline41"
         android:layout_width="wrap_content"
@@ -170,9 +170,10 @@
         android:id="@+id/imageViewTutorial"
         android:layout_width="140dp"
         android:layout_height="97dp"
-        app:srcCompat="@drawable/img1"
-        tools:layout_editor_absoluteX="295dp"
-        tools:layout_editor_absoluteY="66dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline54"
+        app:layout_constraintEnd_toStartOf="@+id/guideline42"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:srcCompat="@drawable/img1" />
 
     <TextView
         android:id="@+id/textView9"
@@ -182,8 +183,8 @@
         android:textColor="@color/cor_texto"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imageViewTutorial"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline42"
+        app:layout_constraintStart_toStartOf="@+id/guideline40" />
 
     <ImageView
         android:id="@+id/imageViewF11_tutorial1law"
@@ -214,6 +215,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline42"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="@+id/guideline41"
+        app:layout_constraintTop_toTopOf="@+id/guideline54"
         app:srcCompat="@color/fundo" />
 
     <android.support.constraint.Guideline
@@ -238,6 +240,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewParental_tutorial1law"
         app:layout_constraintEnd_toStartOf="@+id/guideline41"
         app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline54"
         app:srcCompat="@color/fundo" />
 
     <TextView
@@ -261,6 +264,13 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline42"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/guideline41" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
 
 
 </android.support.constraint.ConstraintLayout>

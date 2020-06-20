@@ -41,13 +41,13 @@
         <activity android:name="com.bioblu.first_law.activity_cruzamento"
           />
         <activity android:name="com.bioblu.first_law.activity_questao"
-            android:screenOrientation="portrait"/>
+           />
         <activity android:name="com.bioblu.first_law.activity_SelectQuestao"
-            android:screenOrientation="portrait"/>
+         />
         <activity android:name="com.bioblu.first_law.activity_menu"
-            android:screenOrientation="portrait"/>
+           />
         <activity android:name="com.bioblu.main.MainActivity"
-            android:screenOrientation="portrait">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

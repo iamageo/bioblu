@@ -8,25 +8,13 @@
     android:background="@drawable/fundo_new"
     tools:context="com.bioblu.main.main_menu">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayoutMenu"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </RelativeLayout>
-
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="54dp"
         android:layout_height="56dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline76"
         app:layout_constraintEnd_toStartOf="@+id/guideline28"
+        app:layout_constraintStart_toStartOf="@+id/guideline29"
         app:layout_constraintTop_toTopOf="@+id/guideline9"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_first_law" />
@@ -69,6 +57,17 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.23" />
 
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
     <android.support.constraint.Guideline
         android:id="@+id/guideline29"
         android:layout_width="wrap_content"
@@ -86,8 +85,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline28"
-        app:layout_constraintTop_toTopOf="@+id/guideline51"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/guideline51" />
 
     <TextView
         android:id="@+id/listaQ2"
@@ -98,8 +96,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline76"
         app:layout_constraintStart_toStartOf="@+id/guideline28"
-        app:layout_constraintTop_toTopOf="@+id/guideline9"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
     <TextView
         android:id="@+id/listaQ4"
@@ -110,8 +107,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline39"
         app:layout_constraintStart_toStartOf="@+id/guideline28"
-        app:layout_constraintTop_toTopOf="@+id/guideline76"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintTop_toTopOf="@+id/guideline76" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline39"
@@ -168,27 +164,23 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline52"
         app:layout_constraintStart_toStartOf="@+id/guideline28"
-        app:layout_constraintTop_toTopOf="@+id/guideline39"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/guideline39" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="BIOBLU"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline53"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline28"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView23"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline53"
         app:layout_constraintEnd_toStartOf="@+id/guideline28"
         app:layout_constraintHorizontal_bias="0.444"
