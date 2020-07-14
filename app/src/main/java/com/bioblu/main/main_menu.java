@@ -37,8 +37,14 @@ public class main_menu extends AppCompatActivity {
     private int i = -1;
     private int ix = -1;
     private int fx = -1;
+
+    String main_menu_1;
+    String main_menu_2;
+    String main_menu_3;
+    String main_menu_4;
+
     private TextView lista1, lista2, lista3, lista4;
-    private String[] opcao = {"Training Screen", "Mendel's 1st Law", "Configuration", "Review Concepts"};
+    private String[] opcao;
     TextView[] cursor = new TextView[6];
     public int velocidade;
     private SensorManager sensorManager;
@@ -52,6 +58,13 @@ public class main_menu extends AppCompatActivity {
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
 
+        String main_menu_1 = getString(R.string.main_menu_1);
+        String main_menu_2 = getString(R.string.main_menu_2);
+        String main_menu_3 = getString(R.string.main_menu_3);
+        String main_menu_4 = getString(R.string.main_menu_4);
+
+        opcao = new String[] {main_menu_1, main_menu_2, main_menu_3, main_menu_4};
+
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
@@ -61,15 +74,13 @@ public class main_menu extends AppCompatActivity {
             //finish();
         //}
 
-
-
         /* tratamento de erro da api de fala */
         TTS = new TextToSpeech(main_menu.this, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
                 ler_velocidade();
                 if (status != TextToSpeech.ERROR) {
-                    TTS.setLanguage(new Locale("en", "US"));
+                    TTS.setLanguage(Locale.getDefault());
                     TTS.setSpeechRate(velocidade);
                     TTS.setPitch(1);
                     TTS.speak("Welcome to BIOBLU you are on the main menu. To navigate through options swipe up or down. A double tap allows you to choose an option.", TextToSpeech.QUEUE_FLUSH, null);
