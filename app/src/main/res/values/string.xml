@@ -25,6 +25,33 @@
     <string name="tutorial_5">To request help on the issue resolution screen, press and hold anywhere on the screen for 2 seconds</string>
     <string name="tutorial_6">To stop the audio, bring your hand in front of your smartphone screen</string>
 
+    //string conceitos
+    <string name="conceito_1">Gene</string>
+    <string name="conceito_2">Genotype</string>
+    <string name="conceito_3">Phenotype</string>
+    <string name="conceito_4">Heterozygote</string>
+    <string name="conceito_5">Homozygous</string>
+    <string name="conceito_6">Dominant</string>
+    <string name="conceito_7">Recessive</string>
+    <string name="conceito_8">Codominance</string>
+    <string name="conceito_9">Allele</string>
+    <string name="conceito_10">Gametes</string>
+    <string name="conceito_11">Dihybridisme</string>
+    <string name="conceito_12">Monohybridisme</string>
+    <string name="conceito_13">You are in the concept screen to navigate through them just swipe up or down, to return to the menu, make an reverse  L anywhere on the screen</string>
+    <string name="conceito_14">Gene, Are specific sequences of nucleotides in DNA that constitute the fundamental unit of heredity.</string>
+    <string name="conceito_15">Genotype, Group of genes of the individual.</string>
+    <string name="conceito_16">Phenotype, Group of physical and physiological characteristics of an individual that results of the expression of the model and action of the environment.</string>
+    <string name="conceito_17">Heterozygote, When an individual has two different alleles of the same gene</string>
+    <string name="conceito_18">Homozygous, When an individual has two equal alleles of the same gene</string>
+    <string name="conceito_19">Dominant, The allele is expressed in a homozygous condition and in a heterozygous condition</string>
+    <string name="conceito_20">Recessive, The allele is only expressed in homozygosis for that reason it has no phenotypic effect when in heterozygosis</string>
+    <string name="conceito_21">Codominance, Situation in which the expression of the phenotypes of both alleles is observed when presented in heterozygosis</string>
+    <string name="conceito_22">Allele, alternative form of a gene that affects the same characteristic differently.</string>
+    <string name="conceito_23">Gametes, are cells involved in sexual reproduction Heredity: transmission of resources from parents to their descendants.</string>
+    <string name="conceito_24">Dihybridisme, this term refers to Mendel\'s second law, where differences in one characteristic are inherited regardless of differences in another characteristic.</string>
+    <string name="conceito_25">Monohybridisme, this term refers to Mendel\'s first law, and applies to hybrid individuals, considering only one characteristic.</string>
+    <string name="conceito_0">REVIEW CONCEPTS</string>
 
 
 

@@ -2,4 +2,5 @@
 <resources>
     <string name="ppca">Software Development Laboratory/Postgraduate Program in Applied Computing/Federal University of Pará (UFPA-CAMTUC)</string>
     <string name="bioblu">BIOBLU</string>
+    <string name="logo">Logo bioblu</string>
 </resources>

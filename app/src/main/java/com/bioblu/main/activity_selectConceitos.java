@@ -36,7 +36,35 @@ public class activity_selectConceitos extends AppCompatActivity {
     private int i = -1;
     private int ix = -1;
     private TextView lista1, lista2, lista3, lista4, lista5, lista6, lista7, lista8, lista9, lista10, lista11, lista12;
-    private String[] opcao = {"Gene", "Genotype", "Phenotype", "Heterozygote", "Homozygous", "Dominant", "Recessive", "Codominance","Allele","Gametes","Dihybridisme","Monohybridisme"};
+
+    private String conceito_0;
+    private String conceito_1;
+    private String conceito_2;
+    private String conceito_3;
+    private String conceito_4;
+    private String conceito_5;
+    private String conceito_6;
+    private String conceito_7;
+    private String conceito_8;
+    private String conceito_9;
+    private String conceito_10;
+    private String conceito_11;
+    private String conceito_12;
+    private String conceito_13;
+    private String conceito_14;
+    private String conceito_15;
+    private String conceito_16;
+    private String conceito_17;
+    private String conceito_18;
+    private String conceito_19;
+    private String conceito_20;
+    private String conceito_21;
+    private String conceito_22;
+    private String conceito_23;
+    private String conceito_24;
+    private String conceito_25;
+
+    private String[] opcao;
     TextView[] cursor = new TextView[12];
     public int velocidade;
     private SensorManager sensorManager;
@@ -47,7 +75,36 @@ public class activity_selectConceitos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_conceitos);
-        /** Pega o Tamanho da tela do Celular Para a Classe OuvinteDeToque **/
+
+        conceito_0 = getString(R.string.conceito_0);
+        conceito_1 = getString(R.string.conceito_1);
+        conceito_2 = getString(R.string.conceito_2);
+        conceito_3 = getString(R.string.conceito_3);
+        conceito_4 = getString(R.string.conceito_4);
+        conceito_5 = getString(R.string.conceito_5);
+        conceito_6 = getString(R.string.conceito_6);
+        conceito_7 = getString(R.string.conceito_7);
+        conceito_8 = getString(R.string.conceito_8);
+        conceito_9 = getString(R.string.conceito_9);
+        conceito_10 = getString(R.string.conceito_10);
+        conceito_11 = getString(R.string.conceito_11);
+        conceito_12 = getString(R.string.conceito_12);
+        conceito_13 = getString(R.string.conceito_13);
+        conceito_14 = getString(R.string.conceito_14);
+        conceito_15 = getString(R.string.conceito_15);
+        conceito_16 = getString(R.string.conceito_16);
+        conceito_17 = getString(R.string.conceito_17);
+        conceito_18 = getString(R.string.conceito_18);
+        conceito_19 = getString(R.string.conceito_19);
+        conceito_20 = getString(R.string.conceito_20);
+        conceito_21 = getString(R.string.conceito_21);
+        conceito_22 = getString(R.string.conceito_22);
+        conceito_23 = getString(R.string.conceito_23);
+        conceito_24 = getString(R.string.conceito_24);
+        conceito_25 = getString(R.string.conceito_25);
+
+        opcao = new String[] {conceito_1, conceito_2,conceito_3,conceito_4,conceito_5,conceito_6,conceito_7,conceito_8,conceito_9,conceito_10,conceito_11,conceito_12};
+
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         screenWidth = displayMetrics.widthPixels;
@@ -66,15 +123,14 @@ public class activity_selectConceitos extends AppCompatActivity {
         lista11 = findViewById(R.id.select_conceito11);
         lista12 = findViewById(R.id.select_conceito12);
 
-        /* tratamento de erro da api de fala */
         textToSpeech = new TextToSpeech(activity_selectConceitos.this, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
                 if (status != TextToSpeech.ERROR) {
                     ler_velocidade();
-                    textToSpeech.setLanguage(new Locale("en", "US"));
+                    textToSpeech.setLanguage(Locale.getDefault());
                     textToSpeech.setSpeechRate(velocidade);
-                    textToSpeech.speak("You are in the concept screen to navigate through them just swipe up or down to return to the menu, make an reverse  L anywhere on the screen.", TextToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(conceito_13, TextToSpeech.QUEUE_ADD, null);
                 }
             }
         });
@@ -101,9 +157,7 @@ public class activity_selectConceitos extends AppCompatActivity {
             }
         };
 
-
         sensorManager.registerListener(proximitySensorListener, proximitySensor, 2* 1000* 1000);
-
 
         cursor[0] = lista1;
         cursor[1] = lista2;
@@ -120,8 +174,6 @@ public class activity_selectConceitos extends AppCompatActivity {
         initTela();
 
     }
-
-    /** METODOS AQUI **/
 
     @SuppressLint("ClickableViewAccessibility")
     private void initTela() {
@@ -149,31 +201,30 @@ public class activity_selectConceitos extends AppCompatActivity {
                 }
                 cursor[ix].setBackgroundResource(R.drawable.linha_horizontal);
                 cursor[ix + 1].setBackgroundColor(Color.TRANSPARENT);
-                //textToSpeech.speak(opcao[i], textToSpeech.QUEUE_FLUSH, null);
                 if (i == 0) {
-                    textToSpeech.speak("Gene. Are specific sequences of nucleotides in DNA that constitute the fundamental unit of heredity.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_14, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 1) {
-                    textToSpeech.speak("Genotype. Group of genes of the individual.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_15, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 2) {
-                    textToSpeech.speak("Phenotype. Group of physical and physiological characteristics of an individual that results of the expression of the model and action of the environment.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_16, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 3) {
-                    textToSpeech.speak("Heterozygote. When an individual has two different alleles of the same gene", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_17, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 4) {
-                    textToSpeech.speak("Homozygous. When an individual has two equal alleles of the same gene.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_18, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 5) {
-                    textToSpeech.speak("Dominant. The allele is expressed in a homozygous condition and in a heterozygous condition.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_19, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 6) {
-                    textToSpeech.speak("Recessive. The allele is only expressed in homozygosis. for that reason it has no phenotypic effect when in heterozygosis.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_20, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 7) {
-                    textToSpeech.speak("Codominance. Situation in which the expression of the phenotypes of both alleles is observed when presented in heterozygosis.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_21, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 8) {
-                    textToSpeech.speak("Allele. Alternative form of a gene that affects the same characteristic differently.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_22, textToSpeech.QUEUE_FLUSH, null);
                 }else if (i == 9) {
-                    textToSpeech.speak("Gametes. Are cells involved in sexual reproduction Heredity: transmission of resources from parents to their descendants.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_23, textToSpeech.QUEUE_FLUSH, null);
                 }else if (i == 10) {
-                    textToSpeech.speak("Dihybridisme. This term refers to Mendel's second law, where differences in one characteristic are inherited regardless of differences in another characteristic.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_24, textToSpeech.QUEUE_FLUSH, null);
                 }else if (i == 11) {
-                    textToSpeech.speak("Monohybridisme. This term refers to Mendel's first law, and applies to hybrid individuals, considering only one characteristic.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_25, textToSpeech.QUEUE_FLUSH, null);
                 }
             }
 
@@ -193,29 +244,29 @@ public class activity_selectConceitos extends AppCompatActivity {
                 cursor[ix].setBackgroundResource(R.drawable.linha_horizontal);
                 //para baixo
                 if (i == 0) {
-                    textToSpeech.speak("Gene. Are specific sequences of nucleotides in DNA that constitute the fundamental unit of heredity.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_14, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 1) {
-                    textToSpeech.speak("Genotype. Group of genes of the individual.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_15, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 2) {
-                    textToSpeech.speak("Phenotype. Group of physical and physiological characteristics of an individual that results of the expression of the model and action of the environment.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_16, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 3) {
-                    textToSpeech.speak("Heterozygote. When an individual has two different alleles of the same gene", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_17, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 4) {
-                    textToSpeech.speak("Homozygous. When an individual has two equal alleles of the same gene.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_18, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 5) {
-                    textToSpeech.speak("Dominant. The allele is expressed in a homozygous condition and in a heterozygous condition.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_19, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 6) {
-                    textToSpeech.speak("Recessive. The allele is only expressed in homozygosis. for that reason it has no phenotypic effect when in heterozygosis.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_20, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 7) {
-                    textToSpeech.speak("Codominance. Situation in which the expression of the phenotypes of both alleles is observed when presented in heterozygosis.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_21, textToSpeech.QUEUE_FLUSH, null);
                 } else if (i == 8) {
-                    textToSpeech.speak("Allele. Alternative form of a gene that affects the same characteristic differently.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_22, textToSpeech.QUEUE_FLUSH, null);
                 }else if (i == 9) {
-                    textToSpeech.speak("Gametes. Are cells involved in sexual reproduction Heredity: transmission of resources from parents to their descendants.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_23, textToSpeech.QUEUE_FLUSH, null);
                 }else if (i == 10) {
-                    textToSpeech.speak("Dihybridisme. This term refers to Mendel's second law, where differences in one characteristic are inherited regardless of differences in another characteristic.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_24, textToSpeech.QUEUE_FLUSH, null);
                 }else if (i == 11) {
-                    textToSpeech.speak("Monohybridisme. This term refers to Mendel's first law, and applies to hybrid individuals, considering only one characteristic.", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(conceito_25, textToSpeech.QUEUE_FLUSH, null);
                 }
                 if (ix > 0) {
                     cursor[ix - 1].setBackgroundColor(Color.TRANSPARENT);
