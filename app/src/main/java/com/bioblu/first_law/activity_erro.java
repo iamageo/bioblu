@@ -38,27 +38,32 @@ public class activity_erro extends AppCompatActivity  {
     private int ix = -1;
     private int fx = -1;
     private TextView lista1;
-    private String[] opcao = {"BACK TO MENU"};
+    private String[] opcao;
     TextView[] cursor = new TextView[4];
     public int velocidade;
     private SensorManager sensorManager;
     private Sensor proximitySensor;
     private SensorEventListener proximitySensorListener;
+    private String erro_1;
+    private String erro_2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_erro);
+        erro_1 = getString(R.string.erro_1);
+        erro_2 = getString(R.string.erro_2);
+        opcao = new String[] {erro_1};
         /* tratamento de erro da api de fala */
         TTS = new TextToSpeech(activity_erro.this, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
                 ler_velocidade();
                 if (status != TextToSpeech.ERROR) {
-                    TTS.setLanguage(new Locale("en", "US"));
+                    TTS.setLanguage(Locale.getDefault());
                     TTS.setSpeechRate(velocidade);
                     TTS.setPitch(1);
-                    TTS.speak("Sorry, but we could not find any questions with your ID or you are not connected to the internet." + '\n' + " To return to the menu, navigate to the option return to the menu and select", TextToSpeech.QUEUE_FLUSH, null);
+                    TTS.speak(erro_2, TextToSpeech.QUEUE_FLUSH, null);
                 }
             }
         });
@@ -117,6 +122,7 @@ public class activity_erro extends AppCompatActivity  {
             public void doubleTap() {
                 if (i >= 0) {
                     switch (opcao[i]) {
+                        case "RETORNAR AO MENU":
                         case "BACK TO MENU": {
                             finish();
                             Intent intent = new Intent(getApplicationContext(), activity_menu.class);
