@@ -43,6 +43,37 @@ public class activity_questao extends AppCompatActivity {
     private SensorManager sensorManager;
     private Sensor proximitySensor;
     private SensorEventListener proximitySensorListener;
+    private String questao_1;
+    private String questao_2;
+    private String questao_3;
+    private String questao_4;
+    private String questao_5;
+    private String questao_6;
+    private String questao_7;
+    private String questao_8;
+    private String questao_9;
+    private String questao_10;
+    private String questao_11;
+    private String questao_12;
+    private String questao_13;
+    private String questao_14;
+    private String questao_15;
+    private String questao_16;
+    private String questao_17;
+    private String questao_18;
+    private String questao_19;
+    private String questao_20;
+    private String questao_21;
+    private String questao_22;
+    private String questao_23;
+    private String questao_24;
+    private String questao_25;
+    private String questao_26;
+    private String questao_27;
+    private String questao_28;
+    private String questao_29;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +91,36 @@ public class activity_questao extends AppCompatActivity {
         filho2 = findViewById(R.id.imageViewF2_questao1law);
         filho3 = findViewById(R.id.imageViewF3_questao1law);
         filho4 = findViewById(R.id.imageViewF4_questao1law);
+        questao_1 = getString(R.string.questao_1);
+        questao_2 = getString(R.string.questao_2);
+        questao_3 = getString(R.string.questao_3);
+        questao_4 = getString(R.string.questao_4);
+        questao_5 = getString(R.string.questao_5);
+        questao_6 = getString(R.string.questao_6);
+        questao_7 = getString(R.string.questao_7);
+        questao_8 = getString(R.string.questao_8);
+        questao_9 = getString(R.string.questao_9);
+        questao_10 = getString(R.string.questao_10);
+        questao_11 = getString(R.string.questao_11);
+        questao_12 = getString(R.string.questao_12);
+        questao_13 = getString(R.string.questao_13);
+        questao_14 = getString(R.string.questao_14);
+        questao_15 = getString(R.string.questao_15);
+        questao_16 = getString(R.string.questao_16);
+        questao_17 = getString(R.string.questao_17);
+        questao_18 = getString(R.string.questao_18);
+        questao_19 = getString(R.string.questao_19);
+        questao_20 = getString(R.string.questao_20);
+        questao_21 = getString(R.string.questao_21);
+        questao_22 = getString(R.string.questao_22);
+        questao_23 = getString(R.string.questao_23);
+        questao_24 = getString(R.string.questao_24);
+        questao_25 = getString(R.string.questao_25);
+        questao_26 = getString(R.string.questao_26);
+        questao_27 = getString(R.string.questao_27);
+        questao_28 = getString(R.string.questao_28);
+        questao_29 = getString(R.string.questao_29);
+
 
         /* tratamento de erro da api de fala */
         textToSpeech = new TextToSpeech(activity_questao.this, new TextToSpeech.OnInitListener() {
@@ -67,7 +128,7 @@ public class activity_questao extends AppCompatActivity {
             public void onInit(int status) {
                 ler_velocidade();
                 if (status != TextToSpeech.ERROR) {
-                    textToSpeech.setLanguage(new Locale("en", "US"));
+                    textToSpeech.setLanguage(Locale.getDefault());
                     textToSpeech.setSpeechRate(velocidade);
                     textToSpeech.speak(questao, TextToSpeech.QUEUE_FLUSH, null);
                 }
@@ -133,7 +194,7 @@ public class activity_questao extends AppCompatActivity {
 
             @Override
             public void doubleTap(){
-                textToSpeech.speak("Gene confirmed"+escolhafala, TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(questao_1+" "+escolhafala, TextToSpeech.QUEUE_FLUSH, null);
                 if (x >= 1 && escolha != null) {
                     if (x == 1) {
                         c1 = escolha;
@@ -145,24 +206,24 @@ public class activity_questao extends AppCompatActivity {
                             if (g1.equals(resposta[0])) {
                                 filho1.setImageResource(R.drawable.quadrado_normal);
                                 textViewFilho1.setText("AA");
-                                textToSpeech.speak("Dominant Homozygous Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_2, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                                 ho++;
                             }else {
                                 x = x - 2;
-                                textToSpeech.speak("The Homozygous Dominant Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_6, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         } else if (c1.equals("a") && d1.equals("A") || c1.equals("A") && d1.equals("a")) {
 
                             if (g1.equals(resposta[0])) {
                                 filho1.setImageResource(R.drawable.quadrado_normal);
                                 textViewFilho1.setText("Aa");
-                                textToSpeech.speak("Heterozygous Domimant Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_3, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                                 he++;
                             }else {
                                 x = x - 2;
-                                textToSpeech.speak("The Heterozygous Dominant Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_7, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         } else if (c1.equals("a") && d1.equals("a")) {
 
@@ -170,11 +231,11 @@ public class activity_questao extends AppCompatActivity {
                                 filho1.setImageResource(R.drawable.quadrado_preenchido);
                                 textViewFilho1.setText("aa");
                                 re++;
-                                textToSpeech.speak("Homozygous Recessive Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_4, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                             }else{
                                 x = x - 2;
-                                textToSpeech.speak("The Heterozygous Recessive Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_8, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         }
                     } else if (x == 3) {
@@ -187,24 +248,24 @@ public class activity_questao extends AppCompatActivity {
                             if (g2.equals(resposta[1])) {
                                 filho2.setImageResource(R.drawable.quadrado_normal);
                                 textViewFilho2.setText("AA");
-                                textToSpeech.speak("Homozygous Dominant Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_2, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                                 ho++;
                             } else {
                                 x = x - 2;
-                                textToSpeech.speak("The Homozygous Dominant Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_6, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         } else if (c2.equals("a") && d2.equals("A") || c2.equals("A") && d2.equals("a")) {
 
                             if (g2.equals(resposta[1])) {
                                 filho2.setImageResource(R.drawable.quadrado_normal);
                                 textViewFilho2.setText("Aa");
-                                textToSpeech.speak("Heterozygous Dominant Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_3, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                                 he++;
                             }else {
                                 x = x - 2;
-                                textToSpeech.speak("The Heterozygous Dominant Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_7, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         } else if (c2.equals("a") && d2.equals("a")) {
 
@@ -212,11 +273,11 @@ public class activity_questao extends AppCompatActivity {
                                 filho2.setImageResource(R.drawable.quadrado_preenchido);
                                 textViewFilho2.setText("aa");
                                 re++;
-                                textToSpeech.speak("Homozygous Recessive Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_4, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                             } else {
                                 x = x - 2;
-                                textToSpeech.speak("The Homozygous Recessive Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_8, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         }
                     } else if (x == 5) {
@@ -229,24 +290,24 @@ public class activity_questao extends AppCompatActivity {
                             if (g3.equals(resposta[2])) {
                                 filho3.setImageResource(R.drawable.quadrado_normal);
                                 textViewFilho3.setText("AA");
-                                textToSpeech.speak("Homozygous Dominant Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_2, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                                 ho++;
                             } else {
                                 x = x - 2;
-                                textToSpeech.speak("The Homozygous Dominant Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_6, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         } else if (c3.equals("a") && d3.equals("A") || c3.equals("A") && d3.equals("a")) {
 
                             if (g3.equals(resposta[2])) {
                                 filho3.setImageResource(R.drawable.quadrado_normal);
                                 textViewFilho3.setText("Aa");
-                                textToSpeech.speak("Heterozygous Dominant Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_3, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                                 he++;
                             }else {
                                 x = x - 2;
-                                textToSpeech.speak("The Heterozygous Dominant Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_7, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         } else if (c3.equals("a") && d3.equals("a")) {
 
@@ -254,11 +315,11 @@ public class activity_questao extends AppCompatActivity {
                                 filho3.setImageResource(R.drawable.quadrado_preenchido);
                                 textViewFilho3.setText("aa");
                                 re++;
-                                textToSpeech.speak("Homozygous Recessive Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_4, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                             } else {
                                 x = x - 2;
-                                textToSpeech.speak("The Homozygous Recessive Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_8, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         }
 
@@ -272,24 +333,24 @@ public class activity_questao extends AppCompatActivity {
                             if (g4.equals(resposta[3])) {
                                 filho4.setImageResource(R.drawable.quadrado_normal);
                                 textViewFilho4.setText("AA");
-                                textToSpeech.speak("Homozygous Dominant Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_2, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                                 ho++;
                             } else {
                                 x = x - 2;
-                                textToSpeech.speak("The Homozygous Dominant Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_6, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         } else if (c4.equals("a") && d4.equals("A") || c4.equals("A") && d4.equals("a")) {
 
                             if (g4.equals(resposta[3])) {
                                 filho4.setImageResource(R.drawable.quadrado_normal);
                                 textViewFilho4.setText("Aa");
-                                textToSpeech.speak("Heterozygous Dominant Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_3, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                                 he++;
                             }else {
                                 x = x - 2;
-                                textToSpeech.speak("The Heterozygous Dominant Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_7, TextToSpeech.QUEUE_FLUSH, null);
                             }
                         } else if (c4.equals("a") && d4.equals("a")) {
 
@@ -297,11 +358,11 @@ public class activity_questao extends AppCompatActivity {
                                 filho4.setImageResource(R.drawable.quadrado_preenchido);
                                 textViewFilho4.setText("aa");
                                 re++;
-                                textToSpeech.speak("Homozygous Recessive Gene", TextToSpeech.QUEUE_FLUSH, null);
-                                textToSpeech.speak("You're right !!! Continue.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_4, TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_5, TextToSpeech.QUEUE_FLUSH, null);
                             } else {
                                 x = x - 2;
-                                textToSpeech.speak("The Homozygous Recessive Informed Gene is wrong, please try again.", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(questao_8, TextToSpeech.QUEUE_FLUSH, null);
                             }
 
                             d = c1 + d1 + "," + c2 + d2 + "," + c3 + d3 + "," + c4 + d4;
@@ -315,21 +376,22 @@ public class activity_questao extends AppCompatActivity {
                             System.out.println(ho + "," + he + "," + re);
                             if (res.intern() == d.intern()) {
                                 if (homoD > 0 & heteD > 0 & reces > 0) {
-                                    textToSpeech.speak("The Crossing is Correct. The Genes generated through the Crossings were," + homoD + "Percent Homozygote Dominant and," + heteD + "Percent Heterozygote Dominant and," + reces + "Percent Homozygote Recessive." + "to return to the menu, make an reverse  L in any part of the screen", TextToSpeech.QUEUE_ADD, null);
+                                    textToSpeech.speak(questao_9 +" "+ homoD +" "+questao_10 +" "+ heteD +" "+questao_11 +" "+ reces +" "+questao_14 +" "+ questao_15, TextToSpeech.QUEUE_ADD, null);
                                 } else if (homoD > 0 & heteD > 0) {
-                                    textToSpeech.speak("The Crossing is Correct. The Genes generated through the Crossings were," + homoD + "Percent Homozygote Dominant and," + heteD + "Percent Heterozygote Dominant and," + "to return to the menu, make an reverse  L in any part of the screen", TextToSpeech.QUEUE_ADD, null);
+                                    textToSpeech.speak(questao_9 +" "+ homoD +" "+questao_10 +" "+ heteD +" "+questao_11 +" "+ questao_15, TextToSpeech.QUEUE_ADD, null);
                                 } else if (homoD > 0 & reces > 0) {
-                                    textToSpeech.speak("The Crossing is Correct. The Genes generated through the Crossings were," + homoD + "Percent Homozygote Dominant and," + reces + "Percent Homozygote Recessive to return to the menu, make an reverse  L in any part of the screen", TextToSpeech.QUEUE_ADD, null);
+                                    textToSpeech.speak(questao_9 +" "+ homoD +" "+questao_10 +" "+ reces +" "+questao_14 +" "+questao_15, TextToSpeech.QUEUE_ADD, null);
                                 } else if (heteD > 0 & reces > 0) {
-                                    textToSpeech.speak("The Crossing is, Correct. The Genes generated through the Crossings were," + heteD + "Heterozygous Percent Dominant and," + reces + "Homozygous Recessive Percen to return to the menu, make an reverse  L in any part of the screen", TextToSpeech.QUEUE_ADD, null);
+                                    textToSpeech.speak(questao_9 +" "+ + heteD +" "+questao_11 +" "+ reces +" "+questao_14 +" "+questao_15, TextToSpeech.QUEUE_ADD, null);
                                 } else if (homoD > 0) {
-                                    textToSpeech.speak("The Crossing is, Correct. The Genes generated through the Crossings were," + homoD + "Percent Homozygous Dominant." + "to return to the menu, make an reverse  L anywhere on the screen", TextToSpeech.QUEUE_ADD, null);
+                                    textToSpeech.speak(questao_9 +" "+ + homoD +" "+questao_12 +" "+questao_15, TextToSpeech.QUEUE_ADD, null);
                                 } else if (heteD > 0) {
-                                    textToSpeech.speak("The Crossing is, Correct. The Genes generated through the Crossings were," + heteD + "Heterozygous Percent Dominant." + "to return to the menu, make an reverse  L anywhere on the screen", TextToSpeech.QUEUE_ADD, null);
+                                    textToSpeech.speak(questao_9 +" "+ + heteD +" "+questao_13 +" "+ questao_15, TextToSpeech.QUEUE_ADD, null);
                                 } else if (reces > 0) {
-                                    textToSpeech.speak("The Crossing is, Correct. The Genes generated through the Crossings were," + reces + "Percent Homozygous Recessive." + "to return to the menu, make an reverse  L anywhere on the screen", TextToSpeech.QUEUE_ADD, null);
+                                    textToSpeech.speak(questao_9 +" "+ + reces +" "+questao_14 +" "+questao_15, TextToSpeech.QUEUE_ADD, null);
                                 }
                             } else {
+
 
                             }
                         }
@@ -342,53 +404,53 @@ public class activity_questao extends AppCompatActivity {
             @Override
             public void onLongPressQuestao() {
                 if (numero_questao.equals("1")) {
-                    textToSpeech.speak("The dominant gene is the one that determines a characteristic, and the recessive is only expressed when duplicated, that's explained because when there is a dominant it becomes inactive", TextToSpeech.QUEUE_ADD, null);
-                    textToSpeech.speak("We know that albinism is a recessive genetic anomaly in which the individual shows a deficiency in the production of melanin in his skin If a boy who produces melanin normally, but has a brother who is albino, (Heterozygous Dominant), marries an albino girl, (Homozygous Recessive), What is the cross between this couple? ", TextToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_16, TextToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_17, TextToSpeech.QUEUE_ADD, null);
                 } else if (numero_questao.equals("2")) {
-                    textToSpeech.speak("Since the couple is heterozygous and myopia has recessive characteristics, we know that their allele is present in the two pairs of chromosomes", textToSpeech.QUEUE_ADD, null);
-                    textToSpeech.speak("Given that myopia is considered a recessive disease determine the cross between  a normal heterozygous couple for myopia.", TextToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_18, textToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_19, TextToSpeech.QUEUE_ADD, null);
                 } else if (numero_questao.equals("3")) {
-                    textToSpeech.speak("Heterozygotes represent individuals with different allele genes, one dominant and one recessive.", textToSpeech.QUEUE_ADD, null);
-                    textToSpeech.speak("What is the crossing generated by a couple, that both are heterozygous?", TextToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_20, textToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_21, TextToSpeech.QUEUE_ADD, null);
                 } else if (numero_questao.equals("4")) {
-                    textToSpeech.speak("The color of dark eyes is dominant over light eyes, which is recessive", textToSpeech.QUEUE_ADD, null);
-                    textToSpeech.speak("a man who has dark eyes but with a mother with light eyes, married a woman with light eyes whose father has dark-eyed parents. Determine this crossing", TextToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_22, textToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_23, TextToSpeech.QUEUE_ADD, null);
                 } else if (numero_questao.equals("5")) {
-                    textToSpeech.speak("If the gene has dominant homozygous characteristics, the fetus dies, if it is dominant heterozygote, the child is born with the genetic condition", textToSpeech.QUEUE_ADD, null);
-                    textToSpeech.speak("The achondroplasia is a type of dwarfism in which the head and body are normal, but the arms and legs are too short It's conditioned by a dominant gene that in homozygous causes death before birth Normal individuals are recessive and the affected individuals are heterozygous. What is this crossing? ", TextToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_24, textToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(questao_25, TextToSpeech.QUEUE_ADD, null);
                 }
             }
 
             @Override
             public void onSwipeTopE() {
-                textToSpeech.speak("Gene A Dominant, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(questao_26, TextToSpeech.QUEUE_FLUSH, null);
                 /** Cruzamento feito pelo User**/
                 escolha = "A";
-                escolhafala = "A dominant";
+                escolhafala = "A "+ questao_28;
             }
 
             @Override
             public void onSwipeBottomE() {
-                textToSpeech.speak("Gene A Dominant, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(questao_26, TextToSpeech.QUEUE_FLUSH, null);
                 /** Cruzamento feito pelo User**/
                 escolha = "A";
-                escolhafala = "A dominant";
+                escolhafala = "A "+ questao_28;
             }
 
             @Override
             public void onSwipeTopD() {
-                textToSpeech.speak("Gene A Recessive, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(questao_27, TextToSpeech.QUEUE_FLUSH, null);
                 /** Informando o Cruzamento a ser feito**/
                 escolha = "a";
-                escolhafala = "a Recessive";
+                escolhafala = "a "+ questao_29;
             }
 
             @Override
             public void onSwipeBottomD () {
-                textToSpeech.speak("Gene A Recessive, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(questao_27, TextToSpeech.QUEUE_FLUSH, null);
                 /** Informando o Cruzamento a ser feito**/
                 escolha = "a";
-                escolhafala = "a Recessive";
+                escolhafala = "a "+ questao_29;
             }
         });
     }

@@ -38,27 +38,41 @@ public class activity_menu extends AppCompatActivity  {
     private int ix = -1;
     private int fx = -1;
     private TextView lista1, lista2, lista3, lista4;
-    private String[] opcao = {"Tutorial", "Crossing", "Questions", "Search Questions"};
+    private String[] opcao;
     TextView[] cursor = new TextView[4];
     public int velocidade;
     private SensorManager sensorManager;
     private Sensor proximitySensor;
     private SensorEventListener proximitySensorListener;
+    private String menu_1;
+    private String menu_2;
+    private String menu_3;
+    private String menu_4;
+    private String menu_5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        menu_1 = getString(R.string.menu_1);
+        menu_2 = getString(R.string.menu_2);
+        menu_3 = getString(R.string.menu_3);
+        menu_4 = getString(R.string.menu_4);
+        menu_5 = getString(R.string.menu_5);
+
+
+        opcao = new String[] {menu_1, menu_2, menu_3, menu_4};
         /* tratamento de erro da api de fala */
         TTS = new TextToSpeech(activity_menu.this, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
                 ler_velocidade();
                 if (status != TextToSpeech.ERROR) {
-                    TTS.setLanguage(new Locale("en", "US"));
+                    TTS.setLanguage(Locale.getDefault());
                     TTS.setSpeechRate(velocidade);
                     TTS.setPitch(1);
-                    TTS.speak("You are on the Mendel's first law module. you can choose the desired option by sliding on the screen.", TextToSpeech.QUEUE_FLUSH, null);
+                    TTS.speak(menu_5, TextToSpeech.QUEUE_FLUSH, null);
                 }
             }
         });
@@ -123,28 +137,32 @@ public class activity_menu extends AppCompatActivity  {
             public void doubleTap() {
                 if (i >= 0) {
                     switch (opcao[i]) {
-                        case "Tutorial": {
+
+                        case "TUTORIAL": {
                             finish();
                             Intent intent = new Intent(getApplicationContext(), activity_tutorial_1law.class);
                             intent.putExtra("velocidade", velocidade);
                             startActivity(intent);
                             break;
                         }
-                        case "Crossing": {
+                        case "CROSSING":
+                        case "CRUZAMENTO": {
                             finish();
                             Intent intent = new Intent(getApplicationContext(), activity_selecaoLetra.class);
                             intent.putExtra("velocidade", velocidade);
                             startActivity(intent);
                             break;
                         }
-                        case "Questions": {
+                        case "QUESTIONS":
+                        case "QUESTÕES": {
                             finish();
                             Intent intent = new Intent(getApplicationContext(), activity_SelectQuestao.class);
                             intent.putExtra("velocidade", velocidade);
                             startActivity(intent);
                             break;
                         }
-                        case "Search Questions": {
+                        case "SEARCH QUESTIONS":
+                        case "BUSCAR QUESTÕES": {
                             finish();
                             Intent intent = new Intent(getApplicationContext(), activity_search_question.class);
                             intent.putExtra("velocidade", velocidade);

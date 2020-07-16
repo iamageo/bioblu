@@ -82,5 +82,44 @@
     <string name="selecao_3">D</string>
     <string name="selecao_4">V</string>
 
+    //string da classe menu
+    <string name="menu_1">TUTORIAL</string>
+    <string name="menu_2">CRUZAMENTO</string>
+    <string name="menu_3">QUESTÕES</string>
+    <string name="menu_4">BUSCAR QUESTÕES</string>
+    <string name="menu_5">Você está no módulo da primeira lei de mendel. você pode escolher a opção desejada deslizando na tela</string>
+    <string name="menu_6">LEI DE MENDEL</string>
+
+    //string da classe Questao
+    <string name="questao_1">Confirmado Gene</string>
+    <string name="questao_2">Gene Homozigoto Dominate</string>
+    <string name="questao_3">Gene Heterozigoto Dominate</string>
+    <string name="questao_4">Gene Homozigoto Recessivo</string>
+    <string name="questao_5">Você acertou!!! Continue</string>
+    <string name="questao_6">O Gene Informado Homozigoto Dominate está errado, tente novamente</string>
+    <string name="questao_7">O Gene Informado Heterozigoto Dominate está errado, tente novamente</string>
+    <string name="questao_8">O Gene Informado Homozigoto Recessivo está errado, tente novamente</string>
+    <string name="questao_9">O Cruzamento está, Correto. Os Genes gerados através do Cruzamentos foram</string>
+    <string name="questao_10">Porcento Homozigoto Dominante e</string>
+    <string name="questao_11">Porcento Heterozigoto Dominante e</string>
+    <string name="questao_12">Porcento Homozigoto Dominante</string>
+    <string name="questao_13">Porcento Heterozigoto Dominante</string>
+    <string name="questao_14">Porcento Homozigoto Recessivo</string>
+    <string name="questao_15">para retornar ao menu, faça um L ao contrário em qualquer parte da tela</string>
+    <string name="questao_16">O gene dominante é aquele que determina uma característica, já o recessivo só se expressa quando duplicado, isso porque quando há um dominante, ele se torna inativo</string>
+    <string name="questao_17">Sabemos que o albinismo é uma anomalia genética recessiva em que o indivíduo portador apresenta uma deficiência na produção de melanina em sua pele Se um rapaz que produz melanina normalmente, mas tem um irmão que é albino,(Heterozigoto Domintate), se casa com uma menina albina,  (Homozigoto Recessivo), Qual é o  cruzamento entre  esse  casal?</string>
+    <string name="questao_18">Visto que, o casal é heterozigoto e a miopia tem características recessivas, sabemos que seu alelo está presente nos dois pares de cromossomos</string>
+    <string name="questao_19">Tendo em vista que a miopia é considerada uma doença recessiva determine o cruzamento de um casal normal heterozigoto para miopia.</string>
+    <string name="questao_20">Heterozigotos representam os indivíduos de genes alelos diferentes, um dominante e um recessivo.</string>
+    <string name="questao_21">Qual é o cruzamento gerado por um casal, que os dois são heterozigoto?</string>
+    <string name="questao_22">A cor de olhos escuros é dominante sobre os olhos claros, que é recessivo</string>
+    <string name="questao_23">um homem que possua os olhos escuros mas com a mãe de olhos claros, casou-se com uma mulher de olhos claros cujo pai possui pais dos olhos escuros. Determine esse cruzamento</string>
+    <string name="questao_24">Se o gene apresentar características Homozigóticas Dominante, o feto morre, se for heterozigoto dominante, a criança nasce com a condição genética</string>
+    <string name="questao_25">A acondroplasia é um tipo de nanismo em que a cabeça e o tronco são normais, mas braços e pernas são muito curtos É condicionado por um gene dominante que, em homozigose, provoca a morte antes do nascimento Os indivíduos normais são recessivos e os afetados são heterozigotos. Qual é esse cruzamento?</string>
+    <string name="questao_26">Gene A Dominate, dê dois toques para confirmar</string>
+    <string name="questao_27">Gene A recessivo, dê dois toques para confirmar</string>
+    <string name="questao_28">Dominante</string>
+    <string name="questao_29">Recessivo</string>
+
 
 </resources>
