@@ -58,7 +58,7 @@ public class activity_selecaoLetra extends AppCompatActivity  {
         selecao_3 = getString(R.string.selecao_3);
         selecao_4 = getString(R.string.selecao_4);
 
-        opcao = new String [] {"A", "D", "V"};
+        opcao = new String [] {selecao_2, selecao_3, selecao_4};
 
         TTS = new TextToSpeech(activity_selecaoLetra.this, new TextToSpeech.OnInitListener() {
             @Override
