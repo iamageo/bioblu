@@ -153,7 +153,35 @@
     <string name="solve_and_send_11">The solution was sent successfully!</string>
     <string name="solve_and_send_12">There was an error submitting the solution, please try again!</string>
 
+    //string tutorial 1 law
+    <string name="tutorial_1law">This is the tutorial screen of the first law of Mendel, here you will learn how to use the resolution mechanisms used in the application for the first law" +
+            "             To start, we will make the following crossing what is the result of crossing pure yellow seed peas with pure green seed peas" +
+            "             to start we will inform the parental genes. now swipe up or down on the left side of the screen</string>
+    <string name="tutorial_dominante">Dominant V gene, double tap to confirm</string>
+    <string name="tutorial_recessivo">Recessive v gene, double tap to confirm</string>
+    <string name="tutorial_4law">You must swipe up or down on the right side of the screen</string>
+    <string name="tutorial_5law">You must swipe up or down on the left side of the screen</string>
+    <string name="tutorial_6law">Make an reverse  “L” to go to the menu</string>
+    <string name="tutorial_7law">Enter one more parental gene by swiping up or down on the left side of the screen</string>
+    <string name="tutorial_8law">Dominant Homozygous Gene</string>
+    <string name="tutorial_9law">Recessive Homozygous Gene</string>
+    <string name="tutorial_11law">"You entered the first pair. now swipe up or down on the right side of the screen"</string>
+    <string name="tutorial_12law">"you're doing well. enter another parental gene by swiping up or down on the right side of the screen"</string>
+    <string name="tutorial_13law">"great, now you will report the results of the f1 generation. to do this swipe up or down on the left side of the screen"</string>
+    <string name="tutorial_14law">"Enter the second gene on the right side of the screen"</string>
+    <string name="tutorial_15law">"very well. inform the other F1 generation gene by swiping up or down on the right side of the screen"</string>
 
-
+    <string name="tutorial_16law">"perfect. enter the second gene of generation f1 on the right side of the screen"</string>
+    <string name="tutorial_17law">"very well, you informed the genes of the parental generation f1. now inform the result of the generation F2. to start slide on the left side of the screen"</string>
+    <string name="tutorial_18law">"Swipe up or down on the left side of the screen "</string>
+    <string name="tutorial_19law">"Swipe up or down one more time on the left side of the screen "</string>
+    <string name="tutorial_20law">"Great!, Now swipe up or down on the right side of the screen"</string>
+    <string name="tutorial_21law">"Perfect!, Now swipe up or down on the left side of the screen"</string>
+    <string name="tutorial_22law">"you're doing well. Swipe up or down on the right side of the screen"</string>
+    <string name="tutorial_23law">"Swipe up or down on the right side of the screen"</string>
+    <string name="tutorial_24law">"Very Good! Swipe up or down on the right side of the screen"</string>
+    <string name="tutorial_25law">"You have completed the question and finished the setting successfully, to proceed make an reverse  “L” on any part of the screen"</string>
+    <string name="tutorial_26law">"You asked for help: every time you need help, just press the screen for two seconds"</string>
+    <string name="tutorial_27law">Let\'s practice!</string>
 
 </resources>

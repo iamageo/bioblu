@@ -29,12 +29,31 @@ public class activity_tutorial_1law extends AppCompatActivity {
     public int velocidade;
     public ImageView imageViewTutorial;
 
-    /**
-     * String com informações de como usar o app
-     **/
-    private String primeirafala = "This is the tutorial screen of the first law of Mendel, here you will learn how to use the resolution mechanisms used in the application for the first law" +
-            "             To start, we will make the following crossing what is the result of crossing pure yellow seed peas with pure green seed peas" +
-            "             to start we will inform the parental genes. now swipe up or down on the left side of the screen";
+    String tutorial_1law;
+    String tutorial_dominante;
+    String tutorial_recessivo;
+    String tutorial_4law;
+    String tutorial_5law;
+    String tutorial_6law;
+    String tutorial_7law;
+    String tutorial_8law_homo_d;
+    String tutorial_9law_hete_r;
+    String tutorial_11law;
+    String tutorial_12law;
+    String tutorial_13law;
+    String tutorial_14law;
+    String tutorial_15law;
+    String tutorial_16law;
+    String tutorial_17law;
+    String tutorial_18law;
+    String tutorial_19law;
+    String tutorial_20law;
+    String tutorial_21law;
+    String tutorial_22law;
+    String tutorial_23law;
+    String tutorial_24law;
+    String tutorial_25law;
+    String tutorial_26law;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +61,33 @@ public class activity_tutorial_1law extends AppCompatActivity {
         setContentView(R.layout.activity_tutorial_1law);
         Bundle dados = getIntent().getExtras();
         velocidade = dados.getInt("velocidade");
+
+        tutorial_1law = getString(R.string.tutorial_1law);
+        tutorial_dominante = getString(R.string.tutorial_dominante);
+        tutorial_recessivo = getString(R.string.tutorial_recessivo);
+        tutorial_4law = getString(R.string.tutorial_4law);
+        tutorial_5law = getString(R.string.tutorial_5law);
+        tutorial_6law = getString(R.string.tutorial_6law);
+        tutorial_7law = getString(R.string.tutorial_7law);
+        tutorial_8law_homo_d = getString(R.string.tutorial_8law);
+        tutorial_9law_hete_r = getString(R.string.tutorial_9law);
+        tutorial_11law = getString(R.string.tutorial_11law);
+        tutorial_12law = getString(R.string.tutorial_12law);
+        tutorial_13law = getString(R.string.tutorial_13law);
+        tutorial_14law = getString(R.string.tutorial_14law);
+        tutorial_15law = getString(R.string.tutorial_15law);
+
+        tutorial_16law = getString(R.string.tutorial_16law);
+        tutorial_17law = getString(R.string.tutorial_17law);
+        tutorial_18law = getString(R.string.tutorial_18law);
+        tutorial_19law = getString(R.string.tutorial_19law);
+        tutorial_20law = getString(R.string.tutorial_20law);
+        tutorial_21law = getString(R.string.tutorial_21law);
+        tutorial_22law = getString(R.string.tutorial_22law);
+        tutorial_23law = getString(R.string.tutorial_23law);
+        tutorial_24law = getString(R.string.tutorial_24law);
+        tutorial_25law = getString(R.string.tutorial_25law);
+        tutorial_26law = getString(R.string.tutorial_26law);
 
         //instância dos textview para todas gerações
         textViewFilho1 = findViewById(R.id.textViewFilho1_tutorial1law);
@@ -76,7 +122,7 @@ public class activity_tutorial_1law extends AppCompatActivity {
                     textToSpeech.setLanguage(new Locale("en", "US"));
                     textToSpeech.setSpeechRate(velocidade);
                     textToSpeech.setPitch(1);
-                    textToSpeech.speak(primeirafala, textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_1law, textToSpeech.QUEUE_FLUSH, null);
                 }
             }
         });
@@ -94,9 +140,6 @@ public class activity_tutorial_1law extends AppCompatActivity {
         initTela();
     }
 
-    /**
-     * METODOS AQUI
-     **/
     @SuppressLint("ClickableViewAccessibility")
     private void initTela() {
         RelativeLayout Rlayout = findViewById(R.id.relativeLayout_tutorial1law);
@@ -104,45 +147,45 @@ public class activity_tutorial_1law extends AppCompatActivity {
             @Override
             public void onSwipeTopE() {
                 if (x == 1) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 2) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 3 || x == 4) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 5) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 6) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 7) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 8) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 9) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 10) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 11) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 12) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 13) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 14) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 15) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 16) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x > 16) {
-                    textToSpeech.speak("Make an reverse  “L” to go to the menu", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_6law, TextToSpeech.QUEUE_FLUSH, null);
                 }
 
             }
@@ -150,45 +193,45 @@ public class activity_tutorial_1law extends AppCompatActivity {
             @Override
             public void onSwipeBottomE() {
                 if (x == 1) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 2) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 3 || x == 4) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 5) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 6) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 7) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 8) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 9) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 10) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 11) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 12) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 13) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 14) {
-                    textToSpeech.speak("Dominant V gene, double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_dominante, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "V";
                 } else if (x == 15) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 16) {
-                    textToSpeech.speak("You must swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_4law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x > 16) {
-                    textToSpeech.speak("Make an reverse  “L” to go to the menu", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_6law, TextToSpeech.QUEUE_FLUSH, null);
                 }
 
             }
@@ -196,45 +239,45 @@ public class activity_tutorial_1law extends AppCompatActivity {
             @Override
             public void onSwipeTopD() {
                 if (x == 1 || x == 2) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 3) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 4) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 5) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 6) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 7) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 8) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 9) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 10) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 11) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 12) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 13) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 14) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 15) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 16) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x > 16) {
-                    textToSpeech.speak("Make an reverse  “L” to go to the menu", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_6law, TextToSpeech.QUEUE_FLUSH, null);
                 }
 
             }
@@ -242,68 +285,68 @@ public class activity_tutorial_1law extends AppCompatActivity {
             @Override
             public void onSwipeBottomD() {
                 if (x == 1 || x == 2) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 3) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 4) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 5) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 6) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 7) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 8) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 9) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 10) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 11) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 12) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 13) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 14) {
-                    textToSpeech.speak("You must swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_5law, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x == 15) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x == 16) {
-                    textToSpeech.speak("Gene v recessive. double tap to confirm", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_recessivo, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "v";
                 } else if (x > 16) {
-                    textToSpeech.speak("Make an reverse  “L” to go to the menu", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(tutorial_6law, TextToSpeech.QUEUE_FLUSH, null);
                 }
             }
 
             @Override
-            public void doubleTap() { //imformar genes VV (amarela) x vv (verde)
+            public void doubleTap() {
                 if (x >= 1 && escolha != null) {
                     if (x == 1) {
                         imageViewTutorial.setImageResource(R.drawable.img2);
                         genep1 = escolha;
-                        textToSpeech.speak("Enter one more parental gene by swiping up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(tutorial_7law, TextToSpeech.QUEUE_FLUSH, null);
                     } else if (x == 2) {
                         genep2 = escolha;
                         imageViewTutorial.setImageResource(R.drawable.img2);
                         if (genep1.equals("V") && genep2.equals("V")) {
                             imageViewP1.setImageResource(R.drawable.quadrado_normal);
                             textViewP1.setText("VV");
-                            textToSpeech.speak("Dominant Homozygous Gene", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("You entered the first pair. now swipe up or down on the right side of the screen", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_8law_homo_d, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_11law, TextToSpeech.QUEUE_ADD, null);
                             imageViewTutorial.setImageResource(R.drawable.img2);
                         }
                     } else if (x == 3) {
                         genep3 = escolha;
-                        textToSpeech.speak("you're doing well. enter another parental gene by swiping up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(tutorial_12law, TextToSpeech.QUEUE_FLUSH, null);
                         imageViewTutorial.setImageResource(R.drawable.img3);
                     } else if (x == 4) {
                         genep4 = escolha;
@@ -311,13 +354,13 @@ public class activity_tutorial_1law extends AppCompatActivity {
                         if (genep3.equals("v") && genep4.equals("v")) {
                             imageViewP12.setImageResource(R.drawable.quadrado_preenchido);
                             textViewP12.setText("vv");
-                            textToSpeech.speak("Recessive Homozygous Gene", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("great, now you will report the results of the f1 generation. to do this swipe up or down on the left side of the screen", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_9law_hete_r, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_13law, TextToSpeech.QUEUE_ADD, null);
                             imageViewTutorial.setImageResource(R.drawable.img2);
                         }
                     } else if (x == 5) {
                         genef1_1 = escolha;
-                        textToSpeech.speak("Enter the second gene on the right side of the screen", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(tutorial_14law, TextToSpeech.QUEUE_ADD, null);
                         imageViewTutorial.setImageResource(R.drawable.img3);
                     } else if (x == 6) {
                         genef1_2 = escolha;
@@ -325,36 +368,36 @@ public class activity_tutorial_1law extends AppCompatActivity {
                             imageViewTutorial.setImageResource(R.drawable.img3);
                             imageViewF1.setImageResource(R.drawable.quadrado_normal);
                             textViewF1.setText("Vv");
-                            textToSpeech.speak("Dominant heterozygous gene", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("very well. inform the other F1 generation gene by swiping up or down on the right side of the screen", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_8law_homo_d, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_15law, TextToSpeech.QUEUE_ADD, null);
                         }
                     } else if (x == 7) {
                         genef1_3 = escolha;
-                        textToSpeech.speak("perfect. enter the second gene of generation f1 on the right side of the screen", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(tutorial_16law, TextToSpeech.QUEUE_ADD, null);
                     } else if (x == 8) {
                         genef1_4 = escolha;
                         if (genef1_3.equals("V") && genef1_4.equals("v")) {
                             imageViewF12.setImageResource(R.drawable.quadrado_normal);
                             textViewF12.setText("Vv");
-                            textToSpeech.speak("Dominant heterozygous gene", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("very well, you informed the genes of the parental generation f1. now inform the result of the generation F2. to start slide on the left side of the screen", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_8law_homo_d, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_17law, TextToSpeech.QUEUE_ADD, null);
                             imageViewTutorial.setImageResource(R.drawable.img2);
                         }
                     } else if (x == 9) {
                         c1 = escolha;
-                        textToSpeech.speak("Swipe up or down on the left side of the screen ", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(tutorial_18law, TextToSpeech.QUEUE_FLUSH, null);
                     } else if (x == 10) {
                         d1 = escolha;
                         if (c1.equals("V") && d1.equals("V")) {
                             filho1.setImageResource(R.drawable.quadrado_normal);
                             textViewFilho1.setText("VV");
-                            textToSpeech.speak("Dominant Homozygous Gene", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("Swipe up or down one more time on the left side of the screen ", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(tutorial_8law_homo_d, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_19law, TextToSpeech.QUEUE_FLUSH, null);
                         }
                     } else if (x == 11) {
                         imageViewTutorial.setImageResource(R.drawable.img3);
                         c2 = escolha;
-                        textToSpeech.speak("Great!, Now swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(tutorial_20law, TextToSpeech.QUEUE_FLUSH, null);
 
                     } else if (x == 12) {
                         d2 = escolha;
@@ -362,33 +405,33 @@ public class activity_tutorial_1law extends AppCompatActivity {
                             filho2.setImageResource(R.drawable.quadrado_normal);
                             textViewFilho2.setText("Vv");
                             imageViewTutorial.setImageResource(R.drawable.img2);
-                            textToSpeech.speak("Dominant heterozygous gene", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("Perfect!, Now swipe up or down on the left side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(tutorial_8law_homo_d, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_21law, TextToSpeech.QUEUE_FLUSH, null);
                         }
                     } else if (x == 13) {
                         c3 = escolha;
-                        textToSpeech.speak("you're doing well. Swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(tutorial_22law, TextToSpeech.QUEUE_FLUSH, null);
                         imageViewTutorial.setImageResource(R.drawable.img3);
                     } else if (x == 14) {
                         d3 = escolha;
                         if (c3.equals("v") && d3.equals("V") || c3.equals("V") && d3.equals("v")) {
                             filho3.setImageResource(R.drawable.quadrado_normal);
                             textViewFilho3.setText("Vv");
-                            textToSpeech.speak("Dominant heterozygous gene", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("Swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(tutorial_8law_homo_d, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_23law, TextToSpeech.QUEUE_FLUSH, null);
                         }
 
                     } else if (x == 15) {
                         c4 = escolha;
-                        textToSpeech.speak("Very Good! Swipe up or down on the right side of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(tutorial_24law, TextToSpeech.QUEUE_FLUSH, null);
                         imageViewTutorial.setImageResource(R.drawable.img3);
                     } else if (x == 16) {
                         d4 = escolha;
                         if (c4.equals("v") && d4.equals("v")) {
                             filho4.setImageResource(R.drawable.quadrado_preenchido);
                             textViewFilho4.setText("vv");
-                            textToSpeech.speak("Recessive Homozygous Gene", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("You have completed the question and finished the setting successfully, to proceed make an reverse  “L” on any part of the screen", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(tutorial_9law_hete_r, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(tutorial_25law, TextToSpeech.QUEUE_FLUSH, null);
                             x = 17;
                         }
                     }
@@ -398,12 +441,10 @@ public class activity_tutorial_1law extends AppCompatActivity {
                 }
             }
 
-            /*dica da questão*/
             @Override
             public void onLongPressTutorial() {
-                textToSpeech.speak("You asked for help: every time you need help, just press the screen for two seconds", TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(tutorial_26law, TextToSpeech.QUEUE_FLUSH, null);
             }
-            /*ir para o meu */
 
             @Override
             public void LGesture() {

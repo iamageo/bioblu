@@ -154,5 +154,35 @@
     <string name="solve_and_send_11">A solução foi submetida com sucesso!</string>
     <string name="solve_and_send_12">Ocorreu um erro ao enviar a solução, tente novamente!</string>
 
+    //string tutorial 1 law
+    <string name="tutorial_1law">Esta é a tela de tutorial da primeira lei de Mendel, aqui você aprenderá como usar os mecanismos de resolução usados no aplicativo para a primeira lei "+
+             "Para começar, faremos o seguinte cruzamento, que é o resultado do cruzamento de ervilhas amarelas puras com ervilhas verdes puras" +
+             "para começar, informaremos os genes dos pais. agora deslize para cima ou para baixo no lado esquerdo da tela</string>
+    <string name="tutorial_dominante">Gene V dominante, toque duas vezes para confirmar</string>
+    <string name="tutorial_recessivo">Gene v recessivo, toque duas vezes para confirmar</string>
+    <string name="tutorial_4law">Você deve deslizar para cima ou para baixo no lado direito da tela</string>
+    <string name="tutorial_5law">Você deve deslizar para cima ou para baixo no lado esquerdo da tela</string>
+    <string name="tutorial_6law">Faça um “L” reverso para ir ao menu</string>
+    <string name="tutorial_7law">Informe mais um gene parental deslizando para cima ou para baixo no lado esquerdo da tela</string>
+    <string name="tutorial_8law">Gene Homozigoto Dominante</string>
+    <string name="tutorial_9law">Gene homozigoto recessivo</string>
+
+    <string name="tutorial_11law">Você inseriu o primeiro par. agora deslize para cima ou para baixo no lado direito da tela</string>
+    <string name="tutorial_12law">você está indo bem. insira outro gene parental deslizando para cima ou para baixo no lado direito da tela</string>
+    <string name="tutorial_13law">ótimo, agora você imformará os resultados da geração F1. para fazer isso, deslize para cima ou para baixo no lado esquerdo da tela</string>
+    <string name="tutorial_14law">Digite o segundo gene no lado direito da tela</string>
+    <string name="tutorial_15law">muito bem. informe o outro gene da geração F1 deslizando para cima ou para baixo no lado direito da tela</string>
+    <string name="tutorial_16law">perfeito. insira o segundo gene da geração F1 no lado direito da tela</string>
+    <string name="tutorial_17law">muito bem, você informou os genes da geração parental f1. agora informe o resultado da geração F2. para iniciar o deslize no lado esquerdo da tela</string>
+    <string name="tutorial_18law">Deslize para cima ou para baixo no lado esquerdo da tela</string>
+    <string name="tutorial_19law">Deslize para cima ou para baixo mais uma vez no lado esquerdo da tela</string>
+    <string name="tutorial_20law">Ótimo !, Agora deslize para cima ou para baixo no lado direito da tela</string>
+    <string name="tutorial_21law">Perfeito !, Agora deslize para cima ou para baixo no lado esquerdo da tela</string>
+    <string name="tutorial_22law">você está indo bem. Deslize para cima ou para baixo no lado direito da tela</string>
+    <string name="tutorial_23law">Deslize para cima ou para baixo no lado direito da tela</string>
+    <string name="tutorial_24law">Muito bom! Deslize para cima ou para baixo no lado direito da tela</string>
+    <string name="tutorial_25law">Você completou a pergunta e concluiu a resolução com êxito. Para continuar, faça um “L” reverso em qualquer parte da tela</string>
+    <string name="tutorial_26law">Você pediu ajuda: sempre que precisar de ajuda, basta pressionar a tela por dois segundos</string>
+    <string name="tutorial_27law">Vamos treinar!</string>
 
 </resources>

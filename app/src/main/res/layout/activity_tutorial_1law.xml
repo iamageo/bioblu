@@ -28,7 +28,8 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline42"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="@+id/guideline41"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/filho4_img" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline42"
@@ -54,7 +55,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewFilho2_tutorial1law"
         app:layout_constraintEnd_toStartOf="@+id/guideline41"
         app:layout_constraintStart_toStartOf="@+id/guideline40"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/filho_3img" />
 
     <ImageView
         android:id="@+id/law1_filho4"
@@ -65,7 +67,8 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textViewFilho4_tutorial1law"
         app:layout_constraintStart_toStartOf="@+id/guideline42"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/filho4_law" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline33"
@@ -156,7 +159,8 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textViewFilho1_tutorial1law"
         app:layout_constraintEnd_toStartOf="@+id/guideline40"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/filho1_law" />
 
     <TextView
         android:id="@+id/textViewFilho2_tutorial1law"
@@ -180,13 +184,14 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline33"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img1" />
+        app:srcCompat="@drawable/img1"
+        android:contentDescription="@string/imagem_tutorial1" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Let's practice!"
+        android:text="@string/tutorial_27law"
         android:textColor="@color/cor_texto"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imageViewTutorial"
@@ -202,7 +207,8 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline41"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="@+id/guideline40"
-        app:srcCompat="@color/fundo" />
+        app:srcCompat="@color/fundo"
+        android:contentDescription="@string/f1_1" />
 
     <ImageView
         android:id="@+id/imageViewF12_tutorial1law"
@@ -213,7 +219,8 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline42"
         app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="@+id/guideline41"
-        app:srcCompat="@color/fundo" />
+        app:srcCompat="@color/fundo"
+        android:contentDescription="@string/f1_2" />
 
     <ImageView
         android:id="@+id/imageViewParental2_tutorial1law"
@@ -224,7 +231,8 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline42"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="@+id/guideline41"
-        app:srcCompat="@color/fundo" />
+        app:srcCompat="@color/fundo"
+        android:contentDescription="@string/pai_2" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline43"
@@ -248,7 +256,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewParental_tutorial1law"
         app:layout_constraintEnd_toStartOf="@+id/guideline41"
         app:layout_constraintStart_toStartOf="@+id/guideline40"
-        app:srcCompat="@color/fundo" />
+        app:srcCompat="@color/fundo"
+        android:contentDescription="@string/pai_1" />
 
     <TextView
         android:id="@+id/textViewParental_tutorial1law"

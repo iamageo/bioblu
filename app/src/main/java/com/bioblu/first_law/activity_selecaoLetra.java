@@ -139,21 +139,21 @@ public class activity_selecaoLetra extends AppCompatActivity  {
                 if (i >= 0) {
                     switch (opcao[i]) {
                         case "A":
-                            intent.putExtra("dominate", "A");
+                            intent.putExtra("dominante", "A");
                             intent.putExtra("recessivo", "a");
                             intent.putExtra("velocidade", velocidade);
                             startActivity(intent);
                             finish();
                             break;
                         case "D":
-                            intent.putExtra("dominate", "D");
+                            intent.putExtra("dominante", "D");
                             intent.putExtra("recessivo", "d");
                             intent.putExtra("velocidade", velocidade);
                             startActivity(intent);
                             finish();
                             break;
                         case "V":
-                            intent.putExtra("dominate", "V");
+                            intent.putExtra("dominante", "V");
                             intent.putExtra("recessivo", "v");
                             intent.putExtra("velocidade", velocidade);
                             startActivity(intent);
