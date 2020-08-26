@@ -7,6 +7,17 @@
     android:background="@drawable/fundo_new"
     tools:context=".second_law.activity_select_questao_2law">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout_search_question_2law"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/listaQ3"
         android:layout_width="wrap_content"
@@ -84,21 +95,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.5" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.64" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6" />
+        app:layout_constraintGuide_percent="0.78" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline32"
@@ -112,12 +123,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.25" />
+        app:layout_constraintGuide_percent="0.35" />
 
     <ImageView
         android:id="@+id/imageView29"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:contentDescription="@string/logo"
         app:layout_constraintBottom_toTopOf="@+id/guideline91"
         app:layout_constraintEnd_toStartOf="@+id/guideline32"
@@ -142,16 +153,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.13" />
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout_search_question_2law"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -94,28 +94,28 @@
         android:layout_marginBottom="24dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintGuide_percent="0.37" />
+        app:layout_constraintGuide_percent="0.46" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.62" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.64" />
+        app:layout_constraintGuide_percent="0.77" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.24" />
+        app:layout_constraintGuide_percent="0.32" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline63"
@@ -151,8 +151,8 @@
 
     <ImageView
         android:id="@+id/imageView28"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:contentDescription="@string/logo"

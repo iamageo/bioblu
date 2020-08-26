@@ -44,11 +44,18 @@ public class activity_search_question_2law extends AppCompatActivity {
     TextView[] cursor = new TextView[1];
     private String id_dispositivo;
 
+    String string_1;
+    String string_2;
+    String string_3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_question_2law);
+
+        string_1 = getString(R.string.search2law_1);
+        string_2 = getString(R.string.search2law_2);
 
         //recupera o id para enviar junto com a resposta
         id_dispositivo = Settings.Secure.getString(
@@ -63,8 +70,7 @@ public class activity_search_question_2law extends AppCompatActivity {
                 if (status != TextToSpeech.ERROR) {
                     textToSpeech.setLanguage(Locale.getDefault());
                     textToSpeech.setSpeechRate(1);
-                    textToSpeech.speak("Você está na tela de busca da segunda lei de mendel, para buscar questões basta deslizar para cima e para baixo na tela"+'\n'
-                            +"após ouvir o comando da questão, dê dois toques para selecionar", textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(string_1, textToSpeech.QUEUE_FLUSH, null);
                 }
             }
         });
@@ -167,7 +173,7 @@ public class activity_search_question_2law extends AppCompatActivity {
                     ix = 0;
                 }
 
-                textToSpeech.speak("Questão " + ii + ":" + questao[ii], TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(string_2 + ii + ":" + questao[ii], TextToSpeech.QUEUE_FLUSH, null);
                 textView_questao.setText(questao[ii]);
             }
 
@@ -185,7 +191,7 @@ public class activity_search_question_2law extends AppCompatActivity {
                     ix++;
                 }
                 textView_questao.setText(questao[ii]);
-                textToSpeech.speak("Questão " + ii + ":" + questao[ii], TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(string_2 + ii + ":" + questao[ii], TextToSpeech.QUEUE_FLUSH, null);
 
             }
 

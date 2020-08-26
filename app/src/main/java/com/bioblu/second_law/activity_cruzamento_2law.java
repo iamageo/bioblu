@@ -72,12 +72,93 @@ public class activity_cruzamento_2law extends AppCompatActivity {
     private Sensor proximitySensor;
     private SensorEventListener proximitySensorListener;
 
+    String cruzamento1;
+    String cruzamento2_gene;
+    String cruzamento3_dominante;
+    String cruzamento4_do;
+    String cruzamento5_recessivo;
+    String cruzamento6_re;
+    String cruzamento7;
+    String cruzamento8_homod;
+    String cruzamento9_hete;
+    String cruzamento10_homore;
+    String cruzamento11;
+    String cruzamento12;
+    String cruzamento13;
+    String cruzamento14;
+    String cruzamento15;
+    String cruzamento16;
+    String cruzamento17;
+    String cruzamento18;
+    String cruzamento19;
+    String cruzamento20;
+    String cruzamento21;
+    String cruzamento22;
+    String cruzamento23;
+    String cruzamento24;
+    String cruzamento25;
+    String cruzamento26;
+    String cruzamento27;
+    String cruzamento28;
+    String cruzamento29;
+    String cruzamento30;
+    String cruzamento31;
+    String cruzamento32;
+    String cruzamento33;
+    String cruzamento34;
+    String cruzamento35;
+    String cruzamento36;
+    String cruzamento37;
+    String cruzamento38;
+    String cruzamento39;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cruzamento_2law);
-        Bundle dados = getIntent().getExtras();
 
+        cruzamento1 = getString(R.string.cruzamento2lei_1);
+        cruzamento2_gene = getString(R.string.cruzamento2lei_2);
+        cruzamento3_dominante= getString(R.string.cruzamento2lei_3);
+        cruzamento4_do = getString(R.string.cruzamento2lei_4);
+        cruzamento5_recessivo = getString(R.string.cruzamento2lei_5);
+        cruzamento6_re = getString(R.string.cruzamento2lei_6);
+        cruzamento7 = getString(R.string.cruzamento2lei_7);
+        cruzamento8_homod = getString(R.string.cruzamento2lei_8);
+        cruzamento9_hete = getString(R.string.cruzamento2lei_9);
+        cruzamento10_homore = getString(R.string.cruzamento2lei_10);
+        cruzamento11 = getString(R.string.cruzamento2lei_11);
+        cruzamento12 = getString(R.string.cruzamento2lei_12);
+        cruzamento13 = getString(R.string.cruzamento2lei_13);
+        cruzamento14 = getString(R.string.cruzamento2lei_14);
+        cruzamento15 = getString(R.string.cruzamento2lei_15);
+        cruzamento16 = getString(R.string.cruzamento2lei_16);
+        cruzamento17 = getString(R.string.cruzamento2lei_17);
+        cruzamento18 = getString(R.string.cruzamento2lei_18);
+        cruzamento19 = getString(R.string.cruzamento2lei_19);
+        cruzamento20 = getString(R.string.cruzamento2lei_20);
+        cruzamento21 = getString(R.string.cruzamento2lei_21);
+        cruzamento22 = getString(R.string.cruzamento2lei_22);
+        cruzamento23 = getString(R.string.cruzamento2lei_23);
+        cruzamento24 = getString(R.string.cruzamento2lei_24);
+        cruzamento25 = getString(R.string.cruzamento2lei_25);
+        cruzamento26 = getString(R.string.cruzamento2lei_26);
+        cruzamento27 = getString(R.string.cruzamento2lei_27);
+        cruzamento28 = getString(R.string.cruzamento2lei_28);
+        cruzamento29 = getString(R.string.cruzamento2lei_29);
+        cruzamento30 = getString(R.string.cruzamento2lei_30);
+        cruzamento31 = getString(R.string.cruzamento2lei_31);
+        cruzamento32 = getString(R.string.cruzamento2lei_32);
+        cruzamento33 = getString(R.string.cruzamento2lei_33);
+        cruzamento34 = getString(R.string.cruzamento2lei_34);
+        cruzamento35 = getString(R.string.cruzamento2lei_35);
+        cruzamento36 = getString(R.string.cruzamento2lei_36);
+        cruzamento37 = getString(R.string.cruzamento2lei_37);
+        cruzamento38 = getString(R.string.cruzamento2lei_38);
+        cruzamento39 = getString(R.string.cruzamento2lei_39);
+
+        Bundle dados = getIntent().getExtras();
         result1 = dados.getString("resultado1");
         result2 = dados.getString("resultado2");
         aux0 = result1 + result2;
@@ -129,9 +210,9 @@ public class activity_cruzamento_2law extends AppCompatActivity {
             public void onInit(int status) {
                 ler_velocidade();
                 if (status != TextToSpeech.ERROR) {
-                    textToSpeech.setLanguage(new Locale("pt", "BR"));
+                    textToSpeech.setLanguage(Locale.getDefault());
                     textToSpeech.setSpeechRate(velocidade);
-                    textToSpeech.speak("Você está na tela de cruzamento, na tela anterios foram informados os genes da geração f1"+'\n'+"agora informe os genes da geração f2", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(cruzamento1, TextToSpeech.QUEUE_FLUSH, null);
                 }
             }
         });
@@ -199,8 +280,8 @@ public class activity_cruzamento_2law extends AppCompatActivity {
             public void onSwipeTopE() {
                 if (gene_x >= 0 && gene_x < 25) {
                     escolhaGeneP = result1;
-                    textToSpeech.speak("Gene " + result1 + " dominante" + " dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
-                    escolhafala = result1 + " dominante";
+                    textToSpeech.speak( cruzamento2_gene + result1 + cruzamento3_dominante, TextToSpeech.QUEUE_FLUSH, null);
+                    escolhafala = result1 + cruzamento4_do;
                 } else if (gene_x > 24) {
                     if (ix == 0 & i > 0) {
                         yx--;
@@ -224,8 +305,8 @@ public class activity_cruzamento_2law extends AppCompatActivity {
             public void onSwipeBottomE() {
                 if (gene_x >= 0 && gene_x < 25) {
                     escolhaGeneP = result3;
-                    textToSpeech.speak("Gene " + result3 + " dominante" + " dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
-                    escolhafala = result3 + " dominante";
+                    textToSpeech.speak(cruzamento2_gene + result3 + cruzamento3_dominante, TextToSpeech.QUEUE_FLUSH, null);
+                    escolhafala = result3 + cruzamento4_do;
                 } else if (gene_x >= 24) {
                     if (i == lista_genes.length - 1) {
                         i = lista_genes.length - 1;
@@ -251,8 +332,8 @@ public class activity_cruzamento_2law extends AppCompatActivity {
             public void onSwipeTopD() {
                 if (gene_x >= 0 && gene_x < 25) {
                     escolhaGeneP = result2;
-                    textToSpeech.speak("Gene " + result2 + " recessivo" + " dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
-                    escolhafala = result2 + " recessivo";
+                    textToSpeech.speak(cruzamento2_gene + result2 + cruzamento5_recessivo, TextToSpeech.QUEUE_FLUSH, null);
+                    escolhafala = result2 + cruzamento6_re;
                 } else if (gene_x >= 24) {
                     if (ix == 0 & i > 0) {
                         yx--;
@@ -275,8 +356,8 @@ public class activity_cruzamento_2law extends AppCompatActivity {
             public void onSwipeBottomD() {
                 if (gene_x >= 0 && gene_x < 25) {
                     escolhaGeneP = result4;
-                    textToSpeech.speak("Gene " + result4 + " recessivo" + " dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
-                    escolhafala = result4 + " recessivo";
+                    textToSpeech.speak(cruzamento2_gene + result4 + cruzamento5_recessivo, TextToSpeech.QUEUE_FLUSH, null);
+                    escolhafala = result4 + cruzamento6_re;
                 }  else if (gene_x >= 24) {
                     if (i == lista_genes.length - 1) {
                         i = lista_genes.length - 1;
@@ -303,11 +384,11 @@ public class activity_cruzamento_2law extends AppCompatActivity {
             @Override
             public void doubleTap() {
                 if (escolhaGeneP != null) {
-                    textToSpeech.speak("Confirmado Gene "+escolhafala, TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(cruzamento7 +escolhafala, TextToSpeech.QUEUE_FLUSH, null);
                     if (gene_x == 0) {
                         resultadoGene[0] = escolhaGeneP;
                         escolhaGeneP = null;
-                        textToSpeech.speak("Informe o segundo gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento11, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 1) {
                         resultadoGene[1] = escolhaGeneP;
                         escolhaGeneP = null;
@@ -315,23 +396,23 @@ public class activity_cruzamento_2law extends AppCompatActivity {
                         textViewF2_1.setText(resultado[0]);
                         if (resultadoGene[0].equals(resultadoGene[0].toUpperCase()) && resultadoGene[1].equals(resultadoGene[1].toUpperCase())) {
                             imageViewF2_1.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Homozigoto dominante";
+                            gene_selecionado1[0] = cruzamento8_homod;
                         } else if (resultadoGene[0].equals(resultadoGene[0].toUpperCase()) && resultadoGene[1].equals(resultadoGene[1].toLowerCase())) {
                             imageViewF2_1.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = cruzamento9_hete;
                         } else if (resultadoGene[0].equals(resultadoGene[0].toLowerCase()) && resultadoGene[1].equals(resultadoGene[1].toUpperCase())) {
                             imageViewF2_1.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = cruzamento9_hete;
                         } else {
                             imageViewF2_1.setImageResource(R.drawable.quadrado_preenchido);
-                            gene_selecionado1[0] = "Homozigoto recessivo";
+                            gene_selecionado1[0] = cruzamento10_homore;
                         }
 
                     } else if (gene_x == 2) {
-                        textToSpeech.speak("Informe o terceiro gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento12, TextToSpeech.QUEUE_ADD, null);
                         resultadoGene[2] = escolhaGeneP;
                         escolhaGeneP = null;
-                        textToSpeech.speak("Informe o quarto gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento13, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 3) {
                         resultadoGene[3] = escolhaGeneP;
                         escolhaGeneP = null;
@@ -339,22 +420,22 @@ public class activity_cruzamento_2law extends AppCompatActivity {
                         textViewF2_2.setText(resultado[1]);
                         if (resultadoGene[2].equals(resultadoGene[2].toUpperCase()) && resultadoGene[3].equals(resultadoGene[3].toUpperCase())) {
                             imageViewF2_2.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Homozigoto dominante";
+                            gene_selecionado1[0] = cruzamento8_homod;
                         } else if (resultadoGene[2].equals(resultadoGene[2].toUpperCase()) && resultadoGene[3].equals(resultadoGene[3].toLowerCase())) {
                             imageViewF2_2.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = cruzamento9_hete;
                         } else if (resultadoGene[2].equals(resultadoGene[2].toLowerCase()) && resultadoGene[3].equals(resultadoGene[3].toUpperCase())) {
                             imageViewF2_2.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = cruzamento9_hete;
                         } else {
                             imageViewF2_2.setImageResource(R.drawable.quadrado_preenchido);
-                            gene_selecionado1[0] = "Homozigoto recessivo";
+                            gene_selecionado1[0] = cruzamento10_homore;
                         }
                     } else if (gene_x == 4) {
-                        textToSpeech.speak("Informe o quinto gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento14, TextToSpeech.QUEUE_ADD, null);
                         resultadoGene[4] = escolhaGeneP;
                         escolhaGeneP = null;
-                        textToSpeech.speak("Informe o sexto gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento15, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 5) {
                         resultadoGene[5] = escolhaGeneP;
                         escolhaGeneP = null;
@@ -362,23 +443,23 @@ public class activity_cruzamento_2law extends AppCompatActivity {
                         textViewF2_3.setText(resultado[2]);
                         if (resultadoGene[4].equals(resultadoGene[4].toUpperCase()) && resultadoGene[5].equals(resultadoGene[5].toUpperCase())) {
                             imageViewF2_3.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Homozigoto dominante";
+                            gene_selecionado1[0] = cruzamento8_homod;
                         } else if (resultadoGene[4].equals(resultadoGene[4].toUpperCase()) && resultadoGene[5].equals(resultadoGene[5].toLowerCase())) {
                             imageViewF2_3.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = cruzamento9_hete;
                         } else if (resultadoGene[4].equals(resultadoGene[4].toLowerCase()) && resultadoGene[5].equals(resultadoGene[5].toUpperCase())) {
                             imageViewF2_3.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = cruzamento9_hete;
                         } else {
-                            gene_selecionado1[2] = "Homozigoto recessivo";
+                            gene_selecionado1[2] = cruzamento10_homore;
                             imageViewF2_3.setImageResource(R.drawable.quadrado_preenchido);
                         }
                     } else if (gene_x == 6) {
-                        textToSpeech.speak("Informe o sétimo gene da geração f2", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento16, TextToSpeech.QUEUE_ADD, null);
 
                         resultadoGene[6] = escolhaGeneP;
                         escolhaGeneP = null;
-                        textToSpeech.speak("Informe o último gene da geração f2", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento17, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 7) {
                         resultadoGene[7] = escolhaGeneP;
                         escolhaGeneP = null;
@@ -386,16 +467,16 @@ public class activity_cruzamento_2law extends AppCompatActivity {
                         textViewF2_4.setText(resultado[3]);
                         if (resultadoGene[6].equals(resultadoGene[6].toUpperCase()) && resultadoGene[7].equals(resultadoGene[7].toUpperCase())) {
                             imageViewF2_4.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Homozigoto dominante";
+                            gene_selecionado1[0] = cruzamento8_homod;
                         } else if (resultadoGene[6].equals(resultadoGene[6].toUpperCase()) && resultadoGene[7].equals(resultadoGene[7].toLowerCase())) {
                             imageViewF2_4.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = cruzamento9_hete;
                         } else if (resultadoGene[6].equals(resultadoGene[6].toLowerCase()) && resultadoGene[7].equals(resultadoGene[7].toUpperCase())) {
                             imageViewF2_4.setImageResource(R.drawable.quadrado_normal);
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = cruzamento9_hete;
                         } else {
                             imageViewF2_4.setImageResource(R.drawable.quadrado_preenchido);
-                            gene_selecionado1[0] = "homozigoto recessivo";
+                            gene_selecionado1[0] = cruzamento10_homore;
                         }
 
                         /* tratar matriz resultado */
@@ -405,98 +486,98 @@ public class activity_cruzamento_2law extends AppCompatActivity {
                             }
                         }
 
-                        textToSpeech.speak("Perfeito, você vai popular o quadro de Punnett de acordo com os resultados da geração F2" + '\n'+ "após informar os dois primeiros resultados verificaremos se está correto, caso esteja prosseguimos, caso não esteja correto, repetiremos o processo" + '\n' + "lembrando, o quadro deve ser preenchido com os genes da geração f2, vamos nessa, informe o primeiro gene", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak( cruzamento18, TextToSpeech.QUEUE_ADD, null);
                         // colocar os genes gerados aqui
                         /** Quadro de Punnet aqui **/
                     } else if (gene_x == 8) { /* linha 0, coluna 0*/
                         valor_matriz[0] = escolhaGeneP;
-                        textToSpeech.speak("perfeito, informe o segundo gene", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento19, TextToSpeech.QUEUE_ADD, null);
                     } else  if (gene_x == 9) {
                         valor_matriz[1] = escolhaGeneP;
                         matriz_resultado[0][0] = valor_matriz[0] + valor_matriz[1];
-                        textToSpeech.speak("perfeito, informe o terceiro gene", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento20, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 10) { /* linha 0, coluna 1*/
                         valor_matriz[2] = escolhaGeneP;
-                        textToSpeech.speak("perfeito, informe o quarto gene", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento21, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 11) {
                         valor_matriz[3] = escolhaGeneP;
                         lista_genes[0] = valor_matriz[0] + valor_matriz[1] + valor_matriz[2] + valor_matriz[3];
                         matriz_resultado[0][1] = valor_matriz[2] + valor_matriz[3];
                         textView1.setText(lista_genes[0]); // final primeiro alelo
 
-                        textToSpeech.speak("muito bem, agora informe o primeiro gene do segundo alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento22, TextToSpeech.QUEUE_ADD, null);
 
                     } else if (gene_x == 12) { /* linha 0, coluna 1*/
                         valor_matriz[4] = escolhaGeneP;
-                        textToSpeech.speak("ótimo, agora informe o segundo gene do segundo alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento23, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 13) {
-                        textToSpeech.speak("ótimo, agora informe o terceiro gene do segundo alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento24, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[5] = escolhaGeneP;
                         escolhaGeneP = null;
                         matriz_resultado[0][2] = valor_matriz[4] + valor_matriz[5];
 
 
                     } else if (gene_x == 14) { /* linha 0, coluna 2*/
-                        textToSpeech.speak("ótimo, agora informe o quarto gene do segundo alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento25, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[6] = escolhaGeneP;
                         escolhaGeneP = null;
                     } else if (gene_x == 15) {
-                        textToSpeech.speak("muito bem, agora iremos verificar os resultados informados.", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento26, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[7] = escolhaGeneP;
                         lista_genes[1] = valor_matriz[4] + valor_matriz[5] + valor_matriz[6] + valor_matriz[7];
                         matriz_resultado[0][3] = valor_matriz[6] + valor_matriz[7];
                         textView2.setText(lista_genes[1]);
 
                         if (lista_genes[0].equals(matriz_final[0][0]) && lista_genes[1].equals(matriz_final[0][1])) {
-                            textToSpeech.speak("perfeito, os resultados informados até agora estão corretos, agora informaremos os outros dois pares, informe o primeiro gene do terceiro alelo", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(cruzamento27, TextToSpeech.QUEUE_ADD, null);
                         } else {
-                            textToSpeech.speak("o resultado informado está incorreto, repita novamente", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(cruzamento28, TextToSpeech.QUEUE_ADD, null);
                             gene_x -= 8;
                         } // tratar outros dois
 
                     }  else if (gene_x == 16) { /* linha 0, coluna 3*/
                         valor_matriz[8] = escolhaGeneP;
-                        textToSpeech.speak("perfeito, informe o segundo gene do terceiro alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento29, TextToSpeech.QUEUE_ADD, null);
                     } else  if (gene_x == 17) {
                         valor_matriz[9] = escolhaGeneP;
                         matriz_resultado[1][0] = valor_matriz[8] + valor_matriz[9];
-                        textToSpeech.speak("perfeito, informe o terceiro gene do terceiro alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento30, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 18) { /* linha 0, coluna 1*/
                         valor_matriz[10] = escolhaGeneP;
-                        textToSpeech.speak("perfeito, informe o quarto gene do terceiro alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento31, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 19) {
                         valor_matriz[11] = escolhaGeneP;
                         lista_genes[2] = valor_matriz[8] + valor_matriz[9] + valor_matriz[10] + valor_matriz[11];
                         matriz_resultado[1][1] = valor_matriz[2] + valor_matriz[3];
                         textView3.setText(lista_genes[2]); // final primeiro alelo
 
-                        textToSpeech.speak("muito bem, agora informe o primeiro gene do quarto alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento32, TextToSpeech.QUEUE_ADD, null);
 
                     }else if (gene_x == 20) { /* linha 0, coluna 4*/
                         valor_matriz[12] = escolhaGeneP;
-                        textToSpeech.speak("ótimo, agora informe o segundo gene do quarto alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento33, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 21) {
-                        textToSpeech.speak("ótimo, agora informe o terceiro gene do quarto alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento34, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[13] = escolhaGeneP;
                         escolhaGeneP = null;
                         matriz_resultado[1][2] = valor_matriz[12] + valor_matriz[13];
 
 
                     } else if (gene_x == 22) { /* linha 0, coluna 2*/
-                        textToSpeech.speak("ótimo, agora informe o quarto gene do quarto alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento35, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[14] = escolhaGeneP;
                         escolhaGeneP = null;
                     } else if (gene_x == 23) {
-                        textToSpeech.speak("muito bem, agora iremos verificar os resultados informados.", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento36, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[15] = escolhaGeneP;
                         lista_genes[3] = valor_matriz[12] + valor_matriz[13] + valor_matriz[14] + valor_matriz[15];
                         matriz_resultado[1][3] = valor_matriz[14] + valor_matriz[15];
                         textView4.setText(lista_genes[3]);
 
                         if (lista_genes[2].equals(matriz_final[0][2]) && lista_genes[3].equals(matriz_final[0][3])) {
-                            textToSpeech.speak("perfeito, os resultados informados até agora estão corretos"+'\n'+ "como o processo de preenchimento é muito demorado evimos que aprendeu, iremos conpletar o quadro para você"+'\n'+"para isso basta tocar duas vezes na tela", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(cruzamento37, TextToSpeech.QUEUE_ADD, null);
                         } else {
-                            textToSpeech.speak("o resultado informado está incorreto, repita novamente", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(cruzamento38, TextToSpeech.QUEUE_ADD, null);
                             gene_x -= 8;
                         } }
 
@@ -547,8 +628,7 @@ public class activity_cruzamento_2law extends AppCompatActivity {
                         classificacao[14] = gene_selecionado1[3] + " e " +gene_selecionado1[2];
                         classificacao[15] = gene_selecionado1[3] + " e " +gene_selecionado1[3];
 
-                        textToSpeech.speak("A partir desse momento você pode navegar dentro do quadro a através dos toques na tela"+ '\n' + "para cima você aumenta o índice da coluna, fazendo com que ande nos elementos linha a linha, ao chegar no final da linha irá passar para próxima"
-                                +'\n'+"para baixo você decrementa o índice da coluna, fazendo o comportamento inverso ao anterior.", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(cruzamento39, TextToSpeech.QUEUE_ADD, null);
 
                     }
                 }else{

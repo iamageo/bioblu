@@ -225,8 +225,144 @@
     <string name="select_polialelia23">you\'re on the screen for choosing polyalelia genes. you must select 4 alleles, where the first two will refer to the first rabbit, and the last two to the second rabbit. after that you will be redirected to the crossing screen</string>
     <string name="select_polialelia24">Gene confirmed </string>
 
+    //string cruzamento 2 lei
+    <string name="cruzamento2lei_1"></string>
+    <string name="cruzamento2lei_2"></string>
+    <string name="cruzamento2lei_3"></string>
+    <string name="cruzamento2lei_4"></string>
+    <string name="cruzamento2lei_5"></string>
+    <string name="cruzamento2lei_6"></string>
+    <string name="cruzamento2lei_7"></string>
+    <string name="cruzamento2lei_8"></string>
+    <string name="cruzamento2lei_9"></string>
+    <string name="cruzamento2lei_10"></string>
+    <string name="cruzamento2lei_11"></string>
+    <string name="cruzamento2lei_12"></string>
+    <string name="cruzamento2lei_13"></string>
+    <string name="cruzamento2lei_14"></string>
+    <string name="cruzamento2lei_15"></string>
+    <string name="cruzamento2lei_16"></string>
+    <string name="cruzamento2lei_17"></string>
+    <string name="cruzamento2lei_18"></string>
+    <string name="cruzamento2lei_19"></string>
+    <string name="cruzamento2lei_20"></string>
+    <string name="cruzamento2lei_21"></string>
+    <string name="cruzamento2lei_22"></string>
+    <string name="cruzamento2lei_23"></string>
+    <string name="cruzamento2lei_24"></string>
+    <string name="cruzamento2lei_25"></string>
+    <string name="cruzamento2lei_26"></string>
+    <string name="cruzamento2lei_27"></string>
+    <string name="cruzamento2lei_28"></string>
+    <string name="cruzamento2lei_29"></string>
+    <string name="cruzamento2lei_30"></string>
+    <string name="cruzamento2lei_31"></string>
+    <string name="cruzamento2lei_32"></string>
+    <string name="cruzamento2lei_33"></string>
+    <string name="cruzamento2lei_34"></string>
+    <string name="cruzamento2lei_35"></string>
+    <string name="cruzamento2lei_36"></string>
+    <string name="cruzamento2lei_37"></string>
+    <string name="cruzamento2lei_38"></string>
+    <string name="cruzamento2lei_39"></string>
 
+    //string classe cruzamento coelho
+    <string name="cruzamento_coelho1"></string>
+    <string name="cruzamento_coelho2"></string>
+    <string name="cruzamento_coelho3"></string>
+    <string name="cruzamento_coelho4"></string>
+    <string name="cruzamento_coelho5"></string>
+    <string name="cruzamento_coelho6"></string>
+    <string name="cruzamento_coelho7"></string>
+    <string name="cruzamento_coelho8"></string>
+    <string name="cruzamento_coelho9"></string>
+    <string name="cruzamento_coelho10"></string>
+    <string name="cruzamento_coelho11"></string>
+    <string name="cruzamento_coelho12"></string>
+    <string name="cruzamento_coelho13"></string>
+    <string name="cruzamento_coelho14"></string>
+    <string name="cruzamento_coelho15"></string>
+    <string name="cruzamento_coelho16"></string>
+    <string name="cruzamento_coelho17"></string>
+    <string name="cruzamento_coelho18"></string>
+    <string name="cruzamento_coelho19"></string>
 
+    //string questão coelho
+    <string name="questao2_1"></string>
+    <string name="questao2_2"></string>
+    <string name="questao2_3"></string>
+    <string name="questao2_4"></string>
+    <string name="questao2_5"></string>
+    <string name="questao2_6"></string>
+    <string name="questao2_7"></string>
+    <string name="questao2_8"></string>
+    <string name="questao2_9"></string>
+    <string name="questao2_10"></string>
+    <string name="questao2_11"></string>
+    <string name="questao2_12"></string>
+    <string name="questao2_13"></string>
+    <string name="questao2_14"></string>
+    <string name="questao2_15"></string>
+    <string name="questao2_16"></string>
+    <string name="questao2_17"></string>
+    <string name="questao2_18"></string>
+    <string name="questao2_19"></string>
+    <string name="questao2_20"></string>
+    <string name="questao2_21"></string>
+    <string name="questao2_22"></string>
+    <string name="questao2_23"></string>
+    <string name="questao2_24"></string>
+    <string name="questao2_25"></string>
+    <string name="questao2_26"></string>
+    <string name="questao2_27"></string>
+    <string name="questao2_28"></string>
+    <string name="questao2_29"></string>
+    <string name="questao2_30"></string>
+    <string name="questao2_31"></string>
+    <string name="questao2_32"></string>
+    <string name="questao2_33"></string>
+    <string name="questao2_34"></string>
+    <string name="questao2_35"></string>
+    <string name="questao2_36"></string>
+    <string name="questao2_37"></string>
+    <string name="questao2_38"></string>
+    <string name="questao2_39"></string>
+    <string name="questao2_40"></string>
+    <string name="questao2_41"></string>
+
+    //string classe search question
+    <string name="search2law_1"></string>
+    <string name="search2law_2">Question</string>
+    <string name="search2law_3">QUESTION 1</string>
+    <string name="search2law_4">QUESTION 2</string>
+    <string name="search2law_5">QUESTION 3</string>
+    <string name="search2law_6"></string>
+    <string name="search2law_7"></string>
+    <string name="search2law_11"></string>
+    <string name="search2law_12"></string>
+    <string name="search2law_13"></string>
+
+    //string select letra 2law
+    <string name="select_letra2law_1">CROSSING</string>
+    <string name="select_letra2law_2"></string>
+    <string name="select_letra2law_3"></string>
+    <string name="select_letra2law_4"></string>
+    <string name="select_letra2law_5"></string>
+    <string name="select_letra2law_6"></string>
+    <string name="select_letra2law_7"></string>
+    <string name="select_letra2law_8"></string>
+    <string name="select_letra2law_9"></string>
+    <string name="select_letra2law_10"></string>
+    <string name="select_letra2law_11"></string>
+    <string name="select_letra2law_12"></string>
+    <string name="select_letra2law_13"></string>
+    <string name="select_letra2law_14"></string>
+    <string name="select_letra2law_01">AA</string>
+    <string name="select_letra2law_02">Aa</string>
+    <string name="select_letra2law_03">aa</string>
+    <string name="select_letra2law_04">BB</string>
+    <string name="select_letra2law_05">Bb</string>
+    <string name="select_letra2law_06">bb</string>
 
 
 </resources>

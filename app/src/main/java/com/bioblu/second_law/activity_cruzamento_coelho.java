@@ -45,11 +45,53 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
     private SensorEventListener proximitySensorListener;
     public String[] dados_recuperados = new String[4];
 
+    String string_coelho1;
+    String string_coelho2;
+    String string_coelho3;
+    String string_coelho4;
+    String string_coelho5;
+    String string_coelho6;
+    String string_coelho7;
+    String string_coelho8;
+    String string_coelho9;
+    String string_coelho10;
+    String string_coelho11;
+    String string_coelho12;
+    String string_coelho13;
+    String string_coelho14;
+    String string_coelho15;
+    String string_coelho16;
+    String string_coelho17;
+    String string_coelho18;
+    String string_coelho19;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cruzamento_coelho);
+
+        string_coelho1 = getString(R.string.cruzamento_coelho1);
+        string_coelho2 = getString(R.string.cruzamento_coelho2);
+        string_coelho3 = getString(R.string.cruzamento_coelho3);
+        string_coelho4 = getString(R.string.cruzamento_coelho4);
+        string_coelho5 = getString(R.string.cruzamento_coelho5);
+        string_coelho6 = getString(R.string.cruzamento_coelho6);
+        string_coelho7 = getString(R.string.cruzamento_coelho7);
+        string_coelho8 = getString(R.string.cruzamento_coelho8);
+        string_coelho9 = getString(R.string.cruzamento_coelho9);
+        string_coelho10 = getString(R.string.cruzamento_coelho10);
+        string_coelho11 = getString(R.string.cruzamento_coelho11);
+        string_coelho12 = getString(R.string.cruzamento_coelho12);
+        string_coelho13 = getString(R.string.cruzamento_coelho13);
+        string_coelho14 = getString(R.string.cruzamento_coelho14);
+        string_coelho15 = getString(R.string.cruzamento_coelho15);
+        string_coelho16 = getString(R.string.cruzamento_coelho16);
+        string_coelho17 = getString(R.string.cruzamento_coelho17);
+        string_coelho18 = getString(R.string.cruzamento_coelho18);
+        string_coelho19 = getString(R.string.cruzamento_coelho19);
+
+
         Bundle dados = getIntent().getExtras();
 
         dados_recuperados[0] = dados.getString("genes_escolhido1");
@@ -80,10 +122,10 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
             @Override
             public void onInit(int status) {
                 if (status != TextToSpeech.ERROR) {
-                    textToSpeech.setLanguage(new Locale("pt", "BR"));
+                    textToSpeech.setLanguage(Locale.getDefault());
                     textToSpeech.setSpeechRate(velocidade);
                     textToSpeech.setPitch(1);
-                    textToSpeech.speak("na tela anterios você informou os alelos parentais, agora realize esse cruzamento!", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(string_coelho1, TextToSpeech.QUEUE_FLUSH, null);
                 }
             }
         });
@@ -142,7 +184,7 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
 
             @Override
             public void doubleTap(){
-                textToSpeech.speak("Confirmado Gene "+escolhafala, TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(string_coelho2  +escolhafala, TextToSpeech.QUEUE_FLUSH, null);
                 if (x >= 1 && escolha != null) {
                     if (x == 1) {
                         a1 = escolha;
@@ -153,19 +195,19 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
                             meuImageView1.getDrawable();
                             meuImageView1.setImageResource(R.drawable.selvagem);
                             textView1.setText(xx1);
-                            textToSpeech.speak("Selvagem ", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho3, TextToSpeech.QUEUE_FLUSH, null);
                         } else if (((a1 == Chinchila) || (a2 == Chinchila))) {
                             meuImageView1.setImageResource(R.drawable.chinchila);
                             textView1.setText(xx1);
-                            textToSpeech.speak("Chinchila", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho4, TextToSpeech.QUEUE_FLUSH, null);
                         } else if ((a1 == himalaia) && (a2 == himalaia)) {
                             meuImageView1.setImageResource(R.drawable.himalaia);
                             textView1.setText(xx1);
-                            textToSpeech.speak("Himalaia", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho5, TextToSpeech.QUEUE_FLUSH, null);
                         } else {
                             meuImageView1.setImageResource(R.drawable.albino);
                             textView1.setText(xx1);
-                            textToSpeech.speak("Albinho", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho6, TextToSpeech.QUEUE_FLUSH, null);
                         }
                     } else if (x == 3) {
                         b1 = escolha;
@@ -175,19 +217,19 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
                         if ((b1 == Selvagem) || (b2 == Selvagem)) {
                             meuImageView2.setImageResource(R.drawable.selvagem);
                             textView2.setText(xx2);
-                            textToSpeech.speak("Selvagem ", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho3, TextToSpeech.QUEUE_FLUSH, null);
                         } else if (((b1 == Chinchila) || (b2 == Chinchila))) {
                             meuImageView2.setImageResource(R.drawable.chinchila);
                             textView2.setText(xx2);
-                            textToSpeech.speak("Chinchila", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho4, TextToSpeech.QUEUE_FLUSH, null);
                         } else if ((b1 == himalaia) || (b2 == himalaia)) {
                             meuImageView2.setImageResource(R.drawable.himalaia);
                             textView2.setText(xx2);
-                            textToSpeech.speak("Himalaia", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho5, TextToSpeech.QUEUE_FLUSH, null);
                         } else {
                             meuImageView2.setImageResource(R.drawable.albino);
                             textView2.setText(xx2);
-                            textToSpeech.speak("Albinho", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho6, TextToSpeech.QUEUE_FLUSH, null);
                         }
                         x1 = a1 + b1;
                         x2 = a1 + b2;
@@ -206,27 +248,27 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
                                 filho1.setImageResource(R.drawable.selvagem);
                                 textViewFilho1.setText(z1);
                                 se++;
-                                textToSpeech.speak("Selvagem ", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho3, TextToSpeech.QUEUE_FLUSH, null);
                             } else if (((c1 == Chinchila) || (d1 == Chinchila))) {
                                 filho1.setImageResource(R.drawable.chinchila);
                                 textViewFilho1.setText(z1);
                                 ch++;
-                                textToSpeech.speak("Chinchila", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho4, TextToSpeech.QUEUE_FLUSH, null);
                             } else if ((c1 == himalaia) || (d1 == himalaia)) {
                                 filho1.setImageResource(R.drawable.himalaia);
                                 textViewFilho1.setText(z1);
                                 hi++;
-                                textToSpeech.speak("Himalaia", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho5, TextToSpeech.QUEUE_FLUSH, null);
                             } else {
                                 filho1.setImageResource(R.drawable.albino);
                                 textViewFilho1.setText(z1);
-                                textToSpeech.speak("Albinho", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho6, TextToSpeech.QUEUE_FLUSH, null);
                                 al++;
                             }
                         }else{
                             x = x - 2;
-                            textToSpeech.speak("O Gene Informado Homozigoto Dominate está errado, tente novamente.", TextToSpeech.QUEUE_FLUSH, null);
-                            }
+                            textToSpeech.speak(string_coelho7, TextToSpeech.QUEUE_FLUSH, null);
+                        }
 
                     } else if (x == 7) {
                         c2 = escolha;
@@ -238,26 +280,26 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
                                 filho2.setImageResource(R.drawable.selvagem);
                                 textViewFilho2.setText(z2);
                                 se++;
-                                textToSpeech.speak("Selvagem ", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho3, TextToSpeech.QUEUE_FLUSH, null);
                             } else if (((c2 == Chinchila) || (d2 == Chinchila))) {
                                 filho2.setImageResource(R.drawable.chinchila);
                                 textViewFilho2.setText(z2);
                                 ch++;
-                                textToSpeech.speak("Chinchila", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho4, TextToSpeech.QUEUE_FLUSH, null);
                             } else if ((c2 == himalaia) || (d2 == himalaia)) {
                                 filho2.setImageResource(R.drawable.himalaia);
                                 textViewFilho2.setText(z2);
                                 hi++;
-                                textToSpeech.speak("Himalaia", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho5, TextToSpeech.QUEUE_FLUSH, null);
                             } else {
                                 filho2.setImageResource(R.drawable.albino);
                                 textViewFilho2.setText(z2);
-                                textToSpeech.speak("Albinho", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho6, TextToSpeech.QUEUE_FLUSH, null);
                                 al++;
                             }
                         }else{
                             x = x - 2;
-                            textToSpeech.speak("O Gene Informado Homozigoto Dominate está errado, tente novamente.", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho8, TextToSpeech.QUEUE_FLUSH, null);
                         }
 
                     } else if (x == 9) {
@@ -270,26 +312,26 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
                                 filho3.setImageResource(R.drawable.selvagem);
                                 textViewFilho3.setText(z3);
                                 se++;
-                                textToSpeech.speak("Selvagem ", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho3, TextToSpeech.QUEUE_FLUSH, null);
                             } else if (((c3 == Chinchila) || (d3 == Chinchila))) {
                                 filho3.setImageResource(R.drawable.chinchila);
                                 textViewFilho3.setText(z3);
                                 ch++;
-                                textToSpeech.speak("Chinchila", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho4, TextToSpeech.QUEUE_FLUSH, null);
                             } else if ((c3 == himalaia) || (d3 == himalaia)) {
                                 filho3.setImageResource(R.drawable.himalaia);
                                 textViewFilho3.setText(z3);
                                 hi++;
-                                textToSpeech.speak("Himalaia", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho5, TextToSpeech.QUEUE_FLUSH, null);
                             } else {
                                 filho3.setImageResource(R.drawable.albino);
                                 textViewFilho3.setText(z3);
-                                textToSpeech.speak("Albinho", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho6, TextToSpeech.QUEUE_FLUSH, null);
                                 al++;
                             }
                         }else{
                             x = x - 2;
-                            textToSpeech.speak("O Gene Informado Homozigoto Dominate está errado, tente novamente.", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho9, TextToSpeech.QUEUE_FLUSH, null);
                         }
 
                     } else if (x == 11) {
@@ -302,26 +344,26 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
                                 filho4.setImageResource(R.drawable.selvagem);
                                 textViewFilho4.setText(z4);
                                 se++;
-                                textToSpeech.speak("Selvagem ", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho3, TextToSpeech.QUEUE_FLUSH, null);
                             } else if (((c4 == Chinchila) || (d4 == Chinchila))) {
                                 filho4.setImageResource(R.drawable.chinchila);
                                 textViewFilho4.setText(z4);
                                 ch++;
-                                textToSpeech.speak("Chinchila", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho4, TextToSpeech.QUEUE_FLUSH, null);
                             } else if ((c4 == himalaia) || (d4 == himalaia)) {
                                 filho4.setImageResource(R.drawable.himalaia);
                                 textViewFilho4.setText(z4);
                                 hi++;
-                                textToSpeech.speak("Himalaia", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho5, TextToSpeech.QUEUE_FLUSH, null);
                             } else {
                                 filho4.setImageResource(R.drawable.albino);
                                 textViewFilho4.setText(z4);
-                                textToSpeech.speak("Albinho", TextToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_coelho6, TextToSpeech.QUEUE_FLUSH, null);
                                 al++;
                             }
                         }else{
                             x = x - 2;
-                            textToSpeech.speak("O Gene Informado Homozigoto Dominate está errado, tente novamente.", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(string_coelho10, TextToSpeech.QUEUE_FLUSH, null);
                         }
 
                         d = c1 + d1 + "," + c2 + d2 + "," + c3 + d3 + "," + c4 + d4;
@@ -337,60 +379,60 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
                         albi = (int) al;
 
                         if (selv > 0 & chic > 0 & hima  > 0 & albi > 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram , " + selv + " Porcento Selvagem ," + chic + " Porcento Chinchila ," + hima + "Porcento Himalaia ," + albi + "Porcento Albino.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + selv + string_coelho12 + chic + string_coelho13 + hima + string_coelho14 + albi +string_coelho15, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (selv > 0 & chic > 0 & hima  > 0 ) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram , " + selv + " Porcento Selvagem ," + chic + " Porcento Chinchila ," + hima + "Porcento Himalaia", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + selv + string_coelho12 + chic + string_coelho13 + hima + string_coelho14, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (selv > 0 & chic > 0 & albi  > 0 ) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram , " + selv + " Porcento Selvagem ," + chic + " Porcento Chinchila ," + albi + "Porcento Albino.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + selv + string_coelho12 + chic + string_coelho13 + albi +string_coelho15, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (selv > 0 & hima > 0 & albi  > 0 ) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram , " + selv + " Porcento Selvagem ," + hima + "Porcento Himalaia" + albi + "Porcento Albino.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + selv + string_coelho12 + hima + string_coelho14 + albi +string_coelho15, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (chic > 0 & hima > 0 & albi  > 0 ) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram , " + chic + " Porcento Chinchila ," + hima + "Porcento Himalaia" + albi + "Porcento Albino.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + chic + string_coelho13 + hima + string_coelho14 + albi +string_coelho15, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (selv > 0 & chic > 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram,"+ selv + " Porcento Selvagem e" + chic + " Porcento Chinchila ", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11+ selv + string_coelho16 + chic + string_coelho13, TextToSpeech.QUEUE_ADD, null);
 
                         } else if (selv > 0 & hima > 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram,"+ selv + " Porcento Selvagem e " + hima + "Porcento Himalaia", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11+ selv + string_coelho16 + hima + string_coelho14, TextToSpeech.QUEUE_ADD, null);
 
                         } else if (selv > 0 & albi> 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram," + selv + " Porcento Selvagem e " + albi + "Porcento Albino.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + selv + string_coelho16 + albi +string_coelho15, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (chic > 0 & hima> 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram," + chic + " Porcento Chinchila e , " + hima + "Porcento Himalaia", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + chic + string_coelho17 + hima + string_coelho14, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (chic > 0 & albi> 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram," + chic + " Porcento Chinchila e ,"+ albi + "Porcento Albino.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + chic + string_coelho17+ albi +string_coelho15, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (hima > 0 & albi> 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram," + hima + "Porcento Himalaia e," + albi + "Porcento Albino.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + hima + string_coelho18 + albi +string_coelho15, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (selv > 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram," + selv + " Porcento Selvagem .", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + selv + string_coelho11, TextToSpeech.QUEUE_ADD, null);
 
                         } else if (chic > 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram," + chic + " Porcento Chinchila.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + chic + string_coelho13, TextToSpeech.QUEUE_ADD, null);
 
                         } else if (hima > 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram," + hima + "Porcento Himalaia.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11 + hima + string_coelho14, TextToSpeech.QUEUE_ADD, null);
 
                         }else if (albi > 0) {
-                            textToSpeech.speak(" Os Genes gerados através do Cruzamentos foram,"  + albi + "Porcento Albino.", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(string_coelho11  + albi +string_coelho15, TextToSpeech.QUEUE_ADD, null);
                         }
                     }
                 }else {
                     x--;
                 }
 
-             }
+            }
             //{"Selvagem", "Chinchila", "Himalaia", "Albino"};
             @Override
             public void onSwipeTopE() {
-                textToSpeech.speak("Gene, "+ dados_recuperados[0], TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(string_coelho19 + dados_recuperados[0], TextToSpeech.QUEUE_FLUSH, null);
                 escolhafala = dados_recuperados[0];
                 switch (escolhafala) {
                     case "Selvagem":
@@ -406,11 +448,11 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
                         escolha = "Ca";
                         break;
                 }
-                }
+            }
 
             @Override
             public void onSwipeBottomE() {
-                textToSpeech.speak("Gene, "+dados_recuperados[1], TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(string_coelho19 +dados_recuperados[1], TextToSpeech.QUEUE_FLUSH, null);
                 escolhafala = dados_recuperados[1];
                 switch (escolhafala) {
                     case "Selvagem":
@@ -431,7 +473,7 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
 
             @Override
             public void onSwipeTopD() {
-                textToSpeech.speak("Gene, "+dados_recuperados[2], TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(string_coelho19 + dados_recuperados[2], TextToSpeech.QUEUE_FLUSH, null);
                 escolhafala = dados_recuperados[2];
                 switch (escolhafala) {
                     case "Selvagem":
@@ -451,7 +493,7 @@ public class activity_cruzamento_coelho extends AppCompatActivity {
             }
             @Override
             public void onSwipeBottomD() {
-                textToSpeech.speak("Gene, "+dados_recuperados[3], TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(string_coelho19 + dados_recuperados[3], TextToSpeech.QUEUE_FLUSH, null);
                 escolhafala = dados_recuperados[3];
                 switch (escolhafala) {
                     case "Selvagem":

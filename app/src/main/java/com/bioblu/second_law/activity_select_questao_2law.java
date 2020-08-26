@@ -40,18 +40,38 @@ public class activity_select_questao_2law extends AppCompatActivity {
     private String [] r3 = {"D", "E", "d", "e"};
     private TextToSpeech textToSpeech;
     private TextView listaQ1, listaQ2, listaQ3;
-    private String[] opcao = {"Questão 1", "Questão 2", "Questão 3"};
+    private String[] opcao;
     TextView[] cursor = new TextView[4];
     public int velocidade;
     private SensorManager sensorManager;
     private Sensor proximitySensor;
     private SensorEventListener proximitySensorListener;
 
+    String questao1;
+    String questao2;
+    String questao3;
+    String questao4;
+    String questao5;
+    String questao6;
+    String questao7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_questao_2law);
+
+        questao1 = getString(R.string.search2law_3);
+        questao2 = getString(R.string.search2law_4);
+        questao3 = getString(R.string.search2law_5);
+
+        questao4 = getString(R.string.search2law_7);
+
+        questao5 = getString(R.string.search2law_11);
+        questao6 = getString(R.string.search2law_12);
+        questao7 = getString(R.string.search2law_13);
+
+
+        opcao = new String[] {questao1, questao2, questao3};
 
         //Pega o Tamanho da tela do Celular Para a Classe OuvinteDeToque
         DisplayMetrics displayMetrics = new DisplayMetrics();
@@ -71,7 +91,7 @@ public class activity_select_questao_2law extends AppCompatActivity {
                 if (status != TextToSpeech.ERROR) {
                     textToSpeech.setLanguage(Locale.getDefault());
                     textToSpeech.setSpeechRate(velocidade);
-                    textToSpeech.speak("Você está na tela de seleção de questão"+'\n'+" após escolher a opção desejada com o deslize para cima ou para baixo, dê dois toques para selecionar a questão", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(questao4, TextToSpeech.QUEUE_FLUSH, null);
                 }
             }
         });
@@ -115,7 +135,7 @@ public class activity_select_questao_2law extends AppCompatActivity {
 
     @SuppressLint("ClickableViewAccessibility")
     private void initTela() {
-        RelativeLayout Rlayout = findViewById(R.id.relativeLayoutquestao2law);
+        RelativeLayout Rlayout = findViewById(R.id.relativeLayout_search_question_2law);
 
         Rlayout.setOnTouchListener(new OuvinteDeToque(this, screenWidth, y) {
             @Override
@@ -130,24 +150,27 @@ public class activity_select_questao_2law extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), activity_questao_2law.class);
                 if (i >= 0) {
                     switch (opcao[i]) {
-                        case "Questão 1":
-                            intent.putExtra("q", "Em aves Domésticas, O gene C condiciona plumagem branca e o seu alelo recessivo, plumagem Colorida . o gene P determina patas com plumas e o seu alelo recessivo, patas sem plumas. Esses pares de genes são autossômicos e segregam-se independentemente. Uma ave branca com patas com plumas, homozigota para os dois pares de genes, foi cruzada com uma colorida com patas sem plumas. Se os descendentes obitidos forem cruazados entre si, qual os genes serão gerados?"+'\n'+"Os genes parentais foram informados, informe os genes da geração F2");
+                        case "QUESTÃO 1":
+                        case "QUESTION 1":
+                            intent.putExtra("q", questao5);
                             intent.putExtra("r0", r1[0]);
                             intent.putExtra("r1", r1[1]);
                             intent.putExtra("r2", r1[2]);
                             intent.putExtra("r3", r1[3]);
                             startActivity(intent);
                             break;
-                        case "Questão 2":
-                            intent.putExtra("q", "Em coelhos, o gene P produz pelagem preta e o seu alelo recessivo p, pelagem parda desde que esteja presente o gene A.\n" + "Os animais aa são sempre albinos. Considerando que ocorra segregação independente entre esses genes, \n" + "a apartir do cruzamento Duplo heterozigoto  com um duplo recessivo, qual foram os genes gerados."+'\n'+"Os genes parentais foram informados, informe os genes da geração F2");
+                        case "QUESTÃO 2":
+                        case "QUESTION 2":
+                            intent.putExtra("q", questao6);
                             intent.putExtra("r0", r2[0]);
                             intent.putExtra("r1", r2[1]);
                             intent.putExtra("r2", r2[2]);
                             intent.putExtra("r3", r2[3]);
                             startActivity(intent);
                             break;
-                        case "Questão 3":
-                            intent.putExtra("q", "A audição normal depende da presença de pelo menos um dominante de dois pares de genes, D e E, que se segregam independentemente.\n" + "Caso você examine a prole de uma grande número de casamentos em que ambos os cônjuges são duplos heterozigotos para esses dois pares de genes,\n" + "qual são os genes gerados."+'\n'+"Os genes parentais foram informados, informe os genes da geração F2");
+                        case "QUESTÃO 3":
+                        case "QUESTION 3":
+                            intent.putExtra("q", questao7);
                             intent.putExtra("r0", r3[0]);
                             intent.putExtra("r1", r3[1]);
                             intent.putExtra("r2", r3[2]);

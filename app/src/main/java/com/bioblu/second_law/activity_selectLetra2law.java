@@ -47,10 +47,39 @@ public class activity_selectLetra2law extends AppCompatActivity {
     private Sensor proximitySensor;
     private SensorEventListener proximitySensorListener;
 
+    String string_letra1;
+    String string_letra2;
+    String string_letra3;
+    String string_letra4;
+    String string_letra5;
+    String string_letra6;
+    String string_letra7;
+    String string_letra8;
+    String string_letra9;
+    String string_letra10;
+    String string_letra11;
+    String string_letra12;
+    String string_letra13;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_letra2law);
+
+        string_letra1 = getString(R.string.select_letra2law_2);
+        string_letra2 = getString(R.string.select_letra2law_3);
+        string_letra3 = getString(R.string.select_letra2law_4);
+        string_letra4 = getString(R.string.select_letra2law_5);
+        string_letra5 = getString(R.string.select_letra2law_6);
+        string_letra6 = getString(R.string.select_letra2law_7);
+        string_letra7 = getString(R.string.select_letra2law_8);
+        string_letra8 = getString(R.string.select_letra2law_9);
+        string_letra9 = getString(R.string.select_letra2law_10);
+        string_letra10 = getString(R.string.select_letra2law_11);
+        string_letra11 = getString(R.string.select_letra2law_12);
+        string_letra12 = getString(R.string.select_letra2law_13);
+        string_letra13 = getString(R.string.select_letra2law_14);
+
         /** Pega o Tamanho da tela do Celular Para a Classe OuvinteDeToque **/
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
@@ -73,9 +102,7 @@ public class activity_selectLetra2law extends AppCompatActivity {
                     ler_velocidade();
                     textToSpeech.setLanguage(Locale.getDefault());
                     textToSpeech.setSpeechRate(velocidade);
-                    textToSpeech.speak("Você está na tela de seleção de genes da segunda lei"+'\n'+" para navegar entre eles basta deslizar para cima ou para baixo"+'\n'+
-                            "você terá três opções em cada lado da tela, deslize em um lado de cada vez"+ '\n' + "após chegar na opção desejada dê dois toques para selecionar" + '\n'
-                            +"para retornar ao menu, faça um L ao contrario em qualquer parte da tela", TextToSpeech.QUEUE_ADD, null);
+                    textToSpeech.speak(string_letra1, TextToSpeech.QUEUE_ADD, null);
                 }
             }
         });
@@ -139,13 +166,13 @@ public class activity_selectLetra2law extends AppCompatActivity {
                 if (lado == "E") {
                     if (i >= 0) {
                         y++;
-                        if (opcaoE[i] == "Homozigoto Dominante A") {
+                        if (opcaoE[i] == string_letra2) {
                             if (y < 2){
                                 ha1 = "A";
                                 ha2 = "A";
-                                textToSpeech.speak("Selecionado Homozigoto Dominante A", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra3, textToSpeech.QUEUE_FLUSH, null);
                             }else {
-                                textToSpeech.speak("Selecionado Homozigoto Dominante A", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra3, textToSpeech.QUEUE_FLUSH, null);
                                 he1 = "A";
                                 he2 = "A";
                                 intent.putExtra("resultado1", ha1);
@@ -158,17 +185,17 @@ public class activity_selectLetra2law extends AppCompatActivity {
                             }
 
                         }
-                        else if(opcaoE[i] == "Heterozigoto Dominante A") {
+                        else if(opcaoE[i] == string_letra4) {
                             if (y < 2){
 
                                 ha1 = "A";
                                 ha2 = "a";
-                                textToSpeech.speak("Selecionado Heterozigoto Dominante A", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra5, textToSpeech.QUEUE_FLUSH, null);
 
                             }else {
                                 he1 = "A";
                                 he2 = "a";
-                                textToSpeech.speak("Selecionado Heterozigoto Dominante A", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra5, textToSpeech.QUEUE_FLUSH, null);
 
                                 intent.putExtra("resultado1", ha1);
                                 intent.putExtra("resultado2", ha2);
@@ -178,17 +205,17 @@ public class activity_selectLetra2law extends AppCompatActivity {
                                 finish();
                             }
                         }
-                        else if(opcaoE[i] == "Homozigoto Recessivo A"){
+                        else if(opcaoE[i] == string_letra6){
                             if (y < 2){
 
                                 ha1 = "a";
                                 ha2 = "a";
-                                textToSpeech.speak("Selecionado Homozigoto Recessivo A", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra7, textToSpeech.QUEUE_FLUSH, null);
 
                             }else {
                                 he1 = "a";
                                 he2 = "a";
-                                textToSpeech.speak("Selecionado Homozigoto Recessivo A", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra7, textToSpeech.QUEUE_FLUSH, null);
 
                                 intent.putExtra("resultado1", ha1);
                                 intent.putExtra("resultado2", ha2);
@@ -204,17 +231,17 @@ public class activity_selectLetra2law extends AppCompatActivity {
                 } else if (lado == "D") {
                     if (j >= 0) {
                         y++;
-                        if (opcaoD[j] == "Homozigoto Dominante B") {
+                        if (opcaoD[j] == string_letra8) {
                             if (y < 2){
 
                                 ha1 = "B";
                                 ha2 = "B";
-                                textToSpeech.speak("Selecionado Homozigoto Dominante B", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra9, textToSpeech.QUEUE_FLUSH, null);
 
                             }else {
                                 he1 = "B";
                                 he2 = "B";
-                                textToSpeech.speak("Selecionado Homozigoto Dominante B", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra9, textToSpeech.QUEUE_FLUSH, null);
 
                                 intent.putExtra("resultado1", ha1);
                                 intent.putExtra("resultado2", ha2);
@@ -225,17 +252,17 @@ public class activity_selectLetra2law extends AppCompatActivity {
 
                             }
                         }
-                        else if (opcaoD[j] == "Heterozigoto Dominante B") {
+                        else if (opcaoD[j] == string_letra10) {
                             if (y < 2){
 
                                 ha1 = "B";
                                 ha2 = "b";
-                                textToSpeech.speak("Selecionado Heterozigoto Dominante B", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra11, textToSpeech.QUEUE_FLUSH, null);
 
                             }else {
                                 he1 = "B";
                                 he2 = "b";
-                                textToSpeech.speak("Selecionado Heterozigoto Dominante B", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra11, textToSpeech.QUEUE_FLUSH, null);
 
                                 intent.putExtra("resultado1", ha1);
                                 intent.putExtra("resultado2", ha2);
@@ -246,17 +273,17 @@ public class activity_selectLetra2law extends AppCompatActivity {
 
                             }
                         }
-                        else if (opcaoD[j] == "Homozigoto Recessivo B"){
+                        else if (opcaoD[j] == string_letra12){
                             if (y < 2){
 
                                 ha1 = "b";
                                 ha2 = "b";
-                                textToSpeech.speak("Selecionado Homozigoto Recessivo B", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra13, textToSpeech.QUEUE_FLUSH, null);
 
                             }else {
                                 he1 = "b";
                                 he2 = "b";
-                                textToSpeech.speak("Selecionado Homozigoto Recessivo B", textToSpeech.QUEUE_FLUSH, null);
+                                textToSpeech.speak(string_letra13, textToSpeech.QUEUE_FLUSH, null);
 
                                 intent.putExtra("resultado1", ha1);
                                 intent.putExtra("resultado2", ha2);

@@ -220,13 +220,160 @@
     <string name="select_polialelia16">Chinchila</string>
     <string name="select_polialelia17">Himalaia</string>
     <string name="select_polialelia18">Albino</string>
-
     <string name="select_polialelia19">Selvagem</string>
     <string name="select_polialelia20">Chinchila</string>
     <string name="select_polialelia21">Himalaia</string>
     <string name="select_polialelia22">Albino</string>
-
     <string name="select_polialelia23">você está na tela de escolha de genes da polialelia. você deve selecionar 4 alelos, onde os dois primeiros serão referentes ao primeiro coelho, e os dois últimos ao segundo coelho. após isso você será redirecionado para tela de cruzamento</string>
     <string name="select_polialelia24">Confirmado gene </string>
+
+    //string cruzamento 2 lei
+    <string name="cruzamento2lei_1"> Você está na tela de cruzamento, na tela anterios foram informados os genes da geração f1, agora informe os genes da geração f2</string>
+    <string name="cruzamento2lei_2"> Gene</string>
+    <string name="cruzamento2lei_3"> dominante, dê dois toques para confirmar</string>
+    <string name="cruzamento2lei_4"> dominante</string>
+    <string name="cruzamento2lei_5"> recessivo, dê dois toques para confirmar"</string>
+    <string name="cruzamento2lei_6"> recessivo</string>
+    <string name="cruzamento2lei_7"> Confirmado Gene</string>
+    <string name="cruzamento2lei_8">Homozigoto dominante</string>
+    <string name="cruzamento2lei_9">Heterozigoto</string>
+    <string name="cruzamento2lei_10">Homozigoto recessivo</string>
+    <string name="cruzamento2lei_11">"Informe o segundo gene da geração f2 "</string>
+    <string name="cruzamento2lei_12">"Informe o terceiro gene da geração f2 "</string>
+    <string name="cruzamento2lei_13">"Informe o quarto gene da geração f2 "</string>
+    <string name="cruzamento2lei_14">"Informe o quinto gene da geração f2 "</string>
+    <string name="cruzamento2lei_15">"Informe o sexto gene da geração f2 "</string>
+    <string name="cruzamento2lei_16">"Informe o sétimo gene da geração f2"</string>
+    <string name="cruzamento2lei_17">"Informe o último gene da geração f2"</string>
+    <string name="cruzamento2lei_18">"Perfeito, você vai popular o quadro de Punnett de acordo com os resultados da geração F2. após informar os dois primeiros resultados verificaremos se está correto, caso esteja prosseguimos, caso não esteja correto, repetiremos o processo. lembrando, o quadro deve ser preenchido com os genes da geração f2, vamos nessa, informe o primeiro gene</string>
+    <string name="cruzamento2lei_19">"perfeito, informe o segundo gene"</string>
+    <string name="cruzamento2lei_20">"perfeito, informe o terceiro gene"</string>
+    <string name="cruzamento2lei_21">"perfeito, informe o quarto gene"</string>
+    <string name="cruzamento2lei_22">"muito bem, agora informe o primeiro gene do segundo alelo"</string>
+    <string name="cruzamento2lei_23">"ótimo, agora informe o segundo gene do segundo alelo"</string>
+    <string name="cruzamento2lei_24">"ótimo, agora informe o terceiro gene do segundo alelo"</string>
+    <string name="cruzamento2lei_25">"ótimo, agora informe o quarto gene do segundo alelo"</string>
+    <string name="cruzamento2lei_26">"muito bem, agora iremos verificar os resultados informados."</string>
+    <string name="cruzamento2lei_27">"perfeito, os resultados informados até agora estão corretos, agora informaremos os outros dois pares, informe o primeiro gene do terceiro alelo"</string>
+    <string name="cruzamento2lei_28">"perfeito, os resultados informados até agora estão corretos, agora informaremos os outros dois pares, informe o primeiro gene do terceiro alelo"</string>
+    <string name="cruzamento2lei_29">"perfeito, informe o segundo gene do terceiro alelo"</string>
+    <string name="cruzamento2lei_30">"perfeito, informe o terceiro gene do terceiro alelo"</string>
+    <string name="cruzamento2lei_31">"perfeito, informe o quarto gene do terceiro alelo"</string>
+    <string name="cruzamento2lei_32">"muito bem, agora informe o primeiro gene do quarto alelo"</string>
+    <string name="cruzamento2lei_33">"ótimo, agora informe o segundo gene do quarto alelo"</string>
+    <string name="cruzamento2lei_34">"ótimo, agora informe o terceiro gene do quarto alelo"</string>
+    <string name="cruzamento2lei_35">"ótimo, agora informe o quarto gene do quarto alelo"</string>
+    <string name="cruzamento2lei_36">"muito bem, agora iremos verificar os resultados informados."</string>
+    <string name="cruzamento2lei_37">"perfeito, os resultados informados até agora estão corretos. como o processo de preenchimento é muito demorado evimos que aprendeu, iremos conpletar o quadro para você. para isso basta tocar duas vezes na tela"</string>
+    <string name="cruzamento2lei_38">"o resultado informado está incorreto, repita novamente"</string>
+    <string name="cruzamento2lei_39">A partir desse momento você pode navegar dentro do quadro a através dos toques na tela"+ '\n' + "para cima você aumenta o índice da coluna, fazendo com que ande nos elementos linha a linha, ao chegar no final da linha irá passar para próxima"
+                                +'\n'+"para baixo você decrementa o índice da coluna, fazendo o comportamento inverso ao anterior."</string>
+
+    //string classe cruzamento coelho
+    <string name="cruzamento_coelho1">"na tela anterios você informou os alelos parentais, agora realize esse cruzamento!"</string>
+    <string name="cruzamento_coelho2">"Confirmado Gene "</string>
+    <string name="cruzamento_coelho3">"Selvagem "</string>
+    <string name="cruzamento_coelho4">"Chinchila"</string>
+    <string name="cruzamento_coelho5">"Himalaia"</string>
+    <string name="cruzamento_coelho6">"Albinho"</string>
+    <string name="cruzamento_coelho7">"O Gene Informado Homozigoto Dominate está errado, tente novamente."</string>
+    <string name="cruzamento_coelho8">"O Gene Informado Homozigoto Dominate está errado, tente novamente."</string>
+    <string name="cruzamento_coelho9">"O Gene Informado Homozigoto Dominate está errado, tente novamente."</string>
+    <string name="cruzamento_coelho10">"O Gene Informado Homozigoto Dominate está errado, tente novamente."</string>
+    <string name="cruzamento_coelho11">" Os Genes gerados através do Cruzamentos foram , "</string>
+    <string name="cruzamento_coelho12"> Porcento Selvagem</string>
+    <string name="cruzamento_coelho13">Porcento Chinchila</string>
+    <string name="cruzamento_coelho14">Porcento Himalaia</string>
+    <string name="cruzamento_coelho15">Porcento albino</string>
+    <string name="cruzamento_coelho16">Porcento selvagem e</string>
+    <string name="cruzamento_coelho17">Porcento chinchila e</string>
+    <string name="cruzamento_coelho18">porcento himalaia e</string>
+    <string name="cruzamento_coelho19">"Gene, "</string>
+
+    //string questão coelho
+    <string name="questao2_1">"Gene "</string>
+    <string name="questao2_2">" dominante, dê dois toques para confirmar"</string>
+    <string name="questao2_3">" dominante"</string>
+    <string name="questao2_4">" recessivo, dê dois toques para confirmar"</string>
+    <string name="questao2_5">" recessivo"</string>
+    <string name="questao2_6">"item: "</string>
+    <string name="questao2_7">"Confirmado Gene "</string>
+    <string name="questao2_8">"Informe o segundo gene da geração f2 "</string>
+    <string name="questao2_9">"Homozigoto Dominante"</string>
+    <string name="questao2_10">"Heterozigoto"</string>
+    <string name="questao2_11">"Homozigoto recessivo"</string>
+    <string name="questao2_12">"Informe o terceiro gene da geração f2 "</string>
+    <string name="questao2_13">"Informe o quarto gene da geração f2 "</string>
+    <string name="questao2_14">"Informe o quinto gene da geração f2 "</string>
+    <string name="questao2_15">"Informe o sexto gene da geração f2 "</string>
+    <string name="questao2_16">"Informe o sétimo gene da geração f2"</string>
+    <string name="questao2_17">"Informe o último gene da geração f2"</string>
+    <string name="questao2_18">"Perfeito, você vai popular o quadro de Punnett de acordo com os resultados da geração F2. após informar cada alelo verificaremos se está correto, caso esteja prosseguimos, caso não esteja correto, repetiremos o processo. lembrando, o quadro deve ser preenchido com os genes da geração f2, vamos nessa, informe o primeiro gene"</string>
+    <string name="questao2_19">"perfeito, informe o segundo gene"</string>
+    <string name="questao2_20">"perfeito, informe o terceiro gene"</string>
+    <string name="questao2_21">"perfeito, informe o quarto gene"</string>
+    <string name="questao2_22">"perfeito, os resultados informados até agora estão corretos, agora informaremos o próximo par, informe o primeiro gene do segundo alelo"</string>
+    <string name="questao2_23">"o resultado informado está incorreto, repita novamenteos genes do primeiro alelo"</string>
+    <string name="questao2_24">"ótimo, agora informe o segundo gene do segundo alelo"</string>
+    <string name="questao2_25">"ótimo, agora informe o terceiro gene do segundo alelo"</string>
+    <string name="questao2_26">"ótimo, agora informe o quarto gene do segundo alelo"</string>
+    <string name="questao2_27">"muito bem, agora iremos verificar os resultados informados."</string>
+    <string name="questao2_28">"perfeito, os resultados informados até agora estão corretos, agora informaremos o próximo par, informe o primeiro gene do terceiro alelo"</string>
+    <string name="questao2_29">"o resultado informado está incorreto, repita novamente os genes do segundo alelo"</string>
+    <string name="questao2_30">"perfeito, informe o segundo gene do terceiro alelo"</string>
+    <string name="questao2_31">"perfeito, informe o terceiro gene do terceiro alelo"</string>
+    <string name="questao2_32">"perfeito, informe o quarto gene do terceiro alelo"</string>
+    <string name="questao2_33">"perfeito, os resultados informados até agora estão corretos, agora informaremos o próximo par, informe o primeiro gene do quarto alelo"</string>
+    <string name="questao2_34">"o resultado informado está incorreto, repita novamente os genes do terceiro alelo"</string>
+    <string name="questao2_35">"ótimo, agora informe o segundo gene do quarto alelo"</string>
+    <string name="questao2_36">"ótimo, agora informe o terceiro gene do quarto alelo"</string>
+    <string name="questao2_37">"ótimo, agora informe o quarto gene do quarto alelo"</string>
+    <string name="questao2_38">"muito bem, agora iremos verificar os resultados informados."</string>
+    <string name="questao2_39">"perfeito, os resultados informados até agora estão corretos. como o processo de preenchimento é muito demorado e vimos que aprendeu, iremos conpletar o quadro para você. para isso basta tocar duas vezes na tela"</string>
+    <string name="questao2_40">"o resultado informado está incorreto, repita novamente os genes do quarto alelo"</string>
+    <string name="questao2_41">A partir desse momento você pode navegar dentro do quadro a através dos toques na tela"+ '\n' + "para cima você aumenta o índice da coluna, fazendo com que ande nos elementos linha a linha, ao chegar no final da linha irá passar para próxima"
+                                +'\n'+"para baixo você decrementa o índice da coluna, fazendo o comportamento inverso ao anterior</string>
+
+    //string classe search question
+    <string name="search2law_1">"Você está na tela de busca da segunda lei de mendel, para buscar questões basta deslizar para cima e para baixo na tela"+'\n'
+                            +"após ouvir o comando da questão, dê dois toques para selecionar"</string>
+    <string name="search2law_2">"Questão "</string>
+    <string name="search2law_3">QUESTÃO 1</string>
+    <string name="search2law_4">QUESTÃO 2</string>
+    <string name="search2law_5">QUESTÃO 3</string>
+    <string name="search2law_6">QUESTÕES</string>
+    <string name="search2law_7">"Você está na tela de seleção de questão. após escolher a opção desejada com o deslize para cima ou para baixo, dê dois toques para selecionar a questão"</string>
+    <string name="search2law_11">"Em aves Domésticas, O gene C condiciona plumagem branca e o seu alelo recessivo, plumagem Colorida . o gene P determina patas com plumas e o seu alelo recessivo, patas sem plumas. Esses pares de genes são autossômicos e segregam-se independentemente. Uma ave branca com patas com plumas, homozigota para os dois pares de genes, foi cruzada com uma colorida com patas sem plumas. Se os descendentes obitidos forem cruazados entre si, qual os genes serão gerados?"+'\n'+"Os genes parentais foram informados, informe os genes da geração F2"</string>
+    <string name="search2law_12">"Em coelhos, o gene P produz pelagem preta e o seu alelo recessivo p, pelagem parda desde que esteja presente o gene A.\n" + "Os animais aa são sempre albinos. Considerando que ocorra segregação independente entre esses genes, \n" + "a apartir do cruzamento Duplo heterozigoto  com um duplo recessivo, qual foram os genes gerados."+'\n'+"Os genes parentais foram informados, informe os genes da geração F2"</string>
+    <string name="search2law_13">"A audição normal depende da presença de pelo menos um dominante de dois pares de genes, D e E, que se segregam independentemente.\n" + "Caso você examine a prole de uma grande número de casamentos em que ambos os cônjuges são duplos heterozigotos para esses dois pares de genes,\n" + "qual são os genes gerados."+'\n'+"Os genes parentais foram informados, informe os genes da geração F2"</string>
+
+
+    //string select letra 2law
+    <string name="select_letra2law_1">CRUZAMENTO</string>
+    <string name="select_letra2law_2">"Você está na tela de seleção de genes da segunda lei. para navegar entre eles basta deslizar para cima ou para baixo.
+                            você terá três opções em cada lado da tela, deslize em um lado de cada vez. após chegar na opção desejada dê dois toques para seleciona.
+                            para retornar ao menu, faça um L ao contrario em qualquer parte da tela"</string>
+    <string name="select_letra2law_3">"Homozigoto Dominante A"</string>
+    <string name="select_letra2law_4">"Selecionado Homozigoto Dominante A"</string>
+    <string name="select_letra2law_5">"Heterozigoto Dominante A"</string>
+    <string name="select_letra2law_6">"Selecionado Heterozigoto Dominante A"</string>
+    <string name="select_letra2law_7">"Homozigoto Recessivo A"</string>
+    <string name="select_letra2law_8">"Selecionado Homozigoto Recessivo A"</string>
+    <string name="select_letra2law_9">"Homozigoto Dominante B"</string>
+    <string name="select_letra2law_10">"Selecionado Homozigoto Dominante B"</string>
+    <string name="select_letra2law_11">"Heterozigoto Dominante B"</string>
+    <string name="select_letra2law_12">"Selecionado Heterozigoto Dominante B"</string>
+    <string name="select_letra2law_13">"Homozigoto Recessivo B"</string>
+    <string name="select_letra2law_14">"Selecionado Homozigoto Recessivo B"</string>
+    <string name="select_letra2law_01">AA</string>
+    <string name="select_letra2law_02">Aa</string>
+    <string name="select_letra2law_03">aa</string>
+    <string name="select_letra2law_04">BB</string>
+    <string name="select_letra2law_05">Bb</string>
+    <string name="select_letra2law_06">bb</string>
+
+
+
+
 
 </resources>
