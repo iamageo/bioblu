@@ -36,8 +36,8 @@ public class activity_selectLetra2law extends AppCompatActivity {
     private int i = -1, j = -1;
     private int ix = -1, jx = -1;
     private TextView lista1, lista2, lista3, lista4, lista5, lista6;
-    private String[] opcaoE = {"Homozigoto Dominante A", "Heterozigoto Dominante A", "Homozigoto Recessivo A"};
-    private String[] opcaoD = {"Homozigoto Dominante B", "Heterozigoto Dominante B", "Homozigoto Recessivo B"};
+    private String[] opcaoE = {"Homozigoto Dominante A", "Heterozigoto Dominante A", "Homozigoto Recessivo A", "Dominant Homozygote A", "Dominant Heterozygote A", "Recessive Homozygote A" };
+    private String[] opcaoD = {"Homozigoto Dominante B", "Heterozigoto Dominante B", "Homozigoto Recessivo B", "Dominant Homozygote B", "Dominant heterozygote B", "Recessive Homozygote B"};
     TextView[] cursorD = new TextView[3];
     TextView[] cursorE = new TextView[3];
     private String[] result = new String[3];
@@ -166,7 +166,7 @@ public class activity_selectLetra2law extends AppCompatActivity {
                 if (lado == "E") {
                     if (i >= 0) {
                         y++;
-                        if (opcaoE[i] == string_letra2) {
+                        if (opcaoE[i] == "Homozigoto Dominante A" || opcaoE[i] == "Dominant Homozygote A") {
                             if (y < 2){
                                 ha1 = "A";
                                 ha2 = "A";
@@ -185,7 +185,7 @@ public class activity_selectLetra2law extends AppCompatActivity {
                             }
 
                         }
-                        else if(opcaoE[i] == string_letra4) {
+                        else if(opcaoE[i] == "Heterozigoto Dominante A" || opcaoE[i] == "Dominant Heterozygote A") {
                             if (y < 2){
 
                                 ha1 = "A";
@@ -205,7 +205,7 @@ public class activity_selectLetra2law extends AppCompatActivity {
                                 finish();
                             }
                         }
-                        else if(opcaoE[i] == string_letra6){
+                        else if(opcaoE[i] == "Homozigoto Recessivo A" || opcaoE[i] == "Recessive Homozygote A"){
                             if (y < 2){
 
                                 ha1 = "a";
@@ -231,7 +231,7 @@ public class activity_selectLetra2law extends AppCompatActivity {
                 } else if (lado == "D") {
                     if (j >= 0) {
                         y++;
-                        if (opcaoD[j] == string_letra8) {
+                        if (opcaoD[j] == "Homozigoto Dominante B" || opcaoD[j] == "Dominant Homozygote B") {
                             if (y < 2){
 
                                 ha1 = "B";
@@ -252,7 +252,7 @@ public class activity_selectLetra2law extends AppCompatActivity {
 
                             }
                         }
-                        else if (opcaoD[j] == string_letra10) {
+                        else if (opcaoD[j] == "Heterozigoto Dominante B" || opcaoD[j] == "Dominant heterozygote B") {
                             if (y < 2){
 
                                 ha1 = "B";
@@ -273,7 +273,7 @@ public class activity_selectLetra2law extends AppCompatActivity {
 
                             }
                         }
-                        else if (opcaoD[j] == string_letra12){
+                        else if (opcaoD[j] == "Homozigoto Recessivo B" || opcaoD[j] == "Recessive Homozygote B"){
                             if (y < 2){
 
                                 ha1 = "b";

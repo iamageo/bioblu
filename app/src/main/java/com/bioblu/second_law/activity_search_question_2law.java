@@ -46,16 +46,14 @@ public class activity_search_question_2law extends AppCompatActivity {
 
     String string_1;
     String string_2;
-    String string_3;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_question_2law);
 
-        string_1 = getString(R.string.search2law_1);
-        string_2 = getString(R.string.search2law_2);
+        string_1 = getString(R.string.search2law_1_1);
+        string_2 = getString(R.string.search2law_2_2);
 
         //recupera o id para enviar junto com a resposta
         id_dispositivo = Settings.Secure.getString(

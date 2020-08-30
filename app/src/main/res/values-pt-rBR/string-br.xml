@@ -232,7 +232,7 @@
     <string name="cruzamento2lei_2"> Gene</string>
     <string name="cruzamento2lei_3"> dominante, dê dois toques para confirmar</string>
     <string name="cruzamento2lei_4"> dominante</string>
-    <string name="cruzamento2lei_5"> recessivo, dê dois toques para confirmar"</string>
+    <string name="cruzamento2lei_5"> recessivo, dê dois toques para confirmar</string>
     <string name="cruzamento2lei_6"> recessivo</string>
     <string name="cruzamento2lei_7"> Confirmado Gene</string>
     <string name="cruzamento2lei_8">Homozigoto dominante</string>
@@ -255,7 +255,7 @@
     <string name="cruzamento2lei_25">"ótimo, agora informe o quarto gene do segundo alelo"</string>
     <string name="cruzamento2lei_26">"muito bem, agora iremos verificar os resultados informados."</string>
     <string name="cruzamento2lei_27">"perfeito, os resultados informados até agora estão corretos, agora informaremos os outros dois pares, informe o primeiro gene do terceiro alelo"</string>
-    <string name="cruzamento2lei_28">"perfeito, os resultados informados até agora estão corretos, agora informaremos os outros dois pares, informe o primeiro gene do terceiro alelo"</string>
+    <string name="cruzamento2lei_28">"o resultado informado está incorreto, repita novamente"</string>
     <string name="cruzamento2lei_29">"perfeito, informe o segundo gene do terceiro alelo"</string>
     <string name="cruzamento2lei_30">"perfeito, informe o terceiro gene do terceiro alelo"</string>
     <string name="cruzamento2lei_31">"perfeito, informe o quarto gene do terceiro alelo"</string>
@@ -335,17 +335,14 @@
                                 +'\n'+"para baixo você decrementa o índice da coluna, fazendo o comportamento inverso ao anterior</string>
 
     //string classe search question
-    <string name="search2law_1">"Você está na tela de busca da segunda lei de mendel, para buscar questões basta deslizar para cima e para baixo na tela"+'\n'
-                            +"após ouvir o comando da questão, dê dois toques para selecionar"</string>
-    <string name="search2law_2">"Questão "</string>
     <string name="search2law_3">QUESTÃO 1</string>
     <string name="search2law_4">QUESTÃO 2</string>
     <string name="search2law_5">QUESTÃO 3</string>
     <string name="search2law_6">QUESTÕES</string>
     <string name="search2law_7">"Você está na tela de seleção de questão. após escolher a opção desejada com o deslize para cima ou para baixo, dê dois toques para selecionar a questão"</string>
-    <string name="search2law_11">"Em aves Domésticas, O gene C condiciona plumagem branca e o seu alelo recessivo, plumagem Colorida . o gene P determina patas com plumas e o seu alelo recessivo, patas sem plumas. Esses pares de genes são autossômicos e segregam-se independentemente. Uma ave branca com patas com plumas, homozigota para os dois pares de genes, foi cruzada com uma colorida com patas sem plumas. Se os descendentes obitidos forem cruazados entre si, qual os genes serão gerados?"+'\n'+"Os genes parentais foram informados, informe os genes da geração F2"</string>
-    <string name="search2law_12">"Em coelhos, o gene P produz pelagem preta e o seu alelo recessivo p, pelagem parda desde que esteja presente o gene A.\n" + "Os animais aa são sempre albinos. Considerando que ocorra segregação independente entre esses genes, \n" + "a apartir do cruzamento Duplo heterozigoto  com um duplo recessivo, qual foram os genes gerados."+'\n'+"Os genes parentais foram informados, informe os genes da geração F2"</string>
-    <string name="search2law_13">"A audição normal depende da presença de pelo menos um dominante de dois pares de genes, D e E, que se segregam independentemente.\n" + "Caso você examine a prole de uma grande número de casamentos em que ambos os cônjuges são duplos heterozigotos para esses dois pares de genes,\n" + "qual são os genes gerados."+'\n'+"Os genes parentais foram informados, informe os genes da geração F2"</string>
+    <string name="search2law_11">"Em aves Domésticas, O gene C condiciona plumagem branca e o seu alelo recessivo, plumagem Colorida . o gene P determina patas com plumas e o seu alelo recessivo, patas sem plumas. Esses pares de genes são autossômicos e segregam-se independentemente. Uma ave branca com patas com plumas, homozigota para os dois pares de genes, foi cruzada com uma colorida com patas sem plumas. Se os descendentes obitidos forem cruazados entre si, qual os genes serão gerados? Os genes parentais foram informados, informe os genes da geração F2"</string>
+    <string name="search2law_12">"Em coelhos, o gene P produz pelagem preta e o seu alelo recessivo p, pelagem parda desde que esteja presente o gene A. Os animais aa são sempre albinos. Considerando que ocorra segregação independente entre esses genes, apartir do cruzamento Duplo heterozigoto  com um duplo recessivo, qual foram os genes gerados. Os genes parentais foram informados, informe os genes da geração F2"</string>
+    <string name="search2law_13">"A audição normal depende da presença de pelo menos um dominante de dois pares de genes, D e E, que se segregam independentemente.\n" + "Caso você examine a prole de uma grande número de casamentos em que ambos os cônjuges são duplos heterozigotos para esses dois pares de genes, qual são os genes gerados. "Os genes parentais foram informados, informe os genes da geração F2"</string>
 
 
     //string select letra 2law
@@ -372,8 +369,152 @@
     <string name="select_letra2law_05">Bb</string>
     <string name="select_letra2law_06">bb</string>
 
+    <string name="search2law_1_1">"Você está na tela de busca da segunda lei de mendel, para buscar questões basta deslizar para cima e para baixo na tela após ouvir o comando da questão, dê dois toques para selecionar"</string>
+    <string name="search2law_2_2">"Questão "</string>
+    <string name="search2law_3_3">BUSCAR QUESTÕES</string>
+
+    //string da classe solve and send question
+    <string name="solve_and_send1">"com base nos dados da questão, informe os genes da geração f1"</string>
+    <string name="solve_and_send2">"Gene "</string>
+    <string name="solve_and_send3"> " dominante dê dois toques para confirmar"</string>
+    <string name="solve_and_send4">" recessivo dê dois toques para confirmar"</string>
+    <string name="solve_and_send5">"Confirmado Gene " </string>
+    <string name="solve_and_send6">"Informe o segundo gene da geração f1 "</string>
+    <string name="solve_and_send7">"Informe o terceiro gene da geração f1 "</string>
+    <string name="solve_and_send8">"Informe o quarto gene da geração f1 "</string>
+    <string name="solve_and_send9">"Muito bem, informe o primeiro gene da geração F2 "</string>
+    <string name="solve_and_send10">"Informe o segundo gene da geração f2 "</string>
+    <string name="solve_and_send11">"Homozigoto Dominante"</string>
+    <string name="solve_and_send12">"Heterozigoto"</string>
+    <string name="solve_and_send13">"Homozigoto recessivo"</string> 
+    <string name="solve_and_send14">"Informe o terceiro gene da geração f2 "</string>
+    <string name="solve_and_send15">"Informe o quarto gene da geração f2 "</string>
+    <string name="solve_and_send16">"Informe o quinto gene da geração f2 "</string>
+    <string name="solve_and_send17">"Informe o sexto gene da geração f2 "</string>
+    <string name="solve_and_send18">"Informe o sétimo gene da geração f2"</string>
+    <string name="solve_and_send19">"Informe o último gene da geração f2"</string>
+    <string name="solve_and_send20">"Perfeito, você vai popular o quadro de Punnett de acordo com os resultados da geração F2. lembrando, o quadro deve ser preenchido com os genes da geração f2, vamos nessa, informe o primeiro gene"</string>
+    <string name="solve_and_send21">"perfeito, informe o segundo gene"</string>
+    <string name="solve_and_send22">"perfeito, informe o terceiro gene"</string>
+    <string name="solve_and_send23">"perfeito, informe o quarto gene"</string>
+    <string name="solve_and_send24">"muito bem, agora informe o primeiro gene do segundo alelo"</string>
+    <string name="solve_and_send25">"ótimo, agora informe o segundo gene do segundo alelo"</string>
+    <string name="solve_and_send26">"ótimo, agora informe o terceiro gene do segundo alelo"</string>
+    <string name="solve_and_send27">"ótimo, agora informe o quarto gene do segundo alelo"</string>
+    <string name="solve_and_send28">"muito bem, agora informe o primeiro gene do terceiro alelo."</string>
+    <string name="solve_and_send29">"perfeito, informe o segundo gene do terceiro alelo"</string>
+    <string name="solve_and_send30">"perfeito, informe o terceiro gene do terceiro alelo"</string>
+    <string name="solve_and_send31">"perfeito, informe o quarto gene do terceiro alelo"</string>
+    <string name="solve_and_send32">"muito bem, agora informe o primeiro gene do quarto alelo"</string>
+    <string name="solve_and_send33">"ótimo, agora informe o segundo gene do quarto alelo"</string>
+    <string name="solve_and_send34">"ótimo, agora informe o terceiro gene do quarto alelo"</string>
+    <string name="solve_and_send35">"ótimo, agora informe o quarto gene do quarto alelo"</string>
+    <string name="solve_and_send36">"perfeito, como o processo de preenchimento é muito demorado evimos que aprendeu, iremos conpletar o quadro para você. para isso basta tocar duas vezes na tela"</string>
+    <string name="solve_and_send37">"Para submeter a sua resposta clique e segure na tela por 2 segundos"</string>
+    <string name="solve_and_send38">"A solução foi enviada com sucesso!"</string>
+    <string name="solve_and_send39">"Houve um erro ao submeter a solução, por favor, tente novamente!"</string>
+    <string name="solve_and_send40"> "para escutar o resultado obtido basta deslizar para cima ou para baixo para navegar entre os itens. caso queira retornar ao menu faça um L ao contrário"</string>
+
+    //string classe tutorial 2 law
+    <string name="tutorial2law_1">"Você está na tela de tutorial da segunda lei. para aprender a utilizar o mecanismo do módulo da segunda lei, faremos o seguinte:
+                            iremos realizar o cruzamento entre sementes lisas e amarelas com sementes rugosas e verdes.
+                            onde o gene V maiúsculo é dominante e representa a característica da cor amarela, o gene v minúsculo é recessivo e apresenta a característica da ervilha lisa, o gene R dominante.. apresenta uma ervilha verde e o gene r recessivo representa a característica rugosa.
+                            para iniciar, informe o primeiro  gene da geração parental deslizando para cima na parte esquerda da tela</string>
+    <string name="tutorial2law_2">"V"</string>
+    <string name="tutorial2law_3">"Gene "</string>
+    <string name="tutorial2law_4">"V dominante"</string>
+    <string name="tutorial2law_5">" dê dois toques para confirmar"</string>
+    <string name="tutorial2law_6">"Você deve tocar na parte de baixo da tela"</string>
+    <string name="tutorial2law_7">"Você deve tocar no outro lado da tela"</string>
+    <string name="tutorial2law_8">"R"</string>
+    <string name="tutorial2law_9">"R dominante"</string>
+    <string name="tutorial2law_10">"Você deve tocar na parte de cima da tela"</string>
+    <string name="tutorial2law_11">"Você deve tocar no outro lado da tela"</string>
+    <string name="tutorial2law_12">"v"</string>
+    <string name="tutorial2law_13">"V recessivo"</string>
+    <string name="tutorial2law_14">"r"</string>
+    <string name="tutorial2law_15">"r recessivo"</string>
+    <string name="tutorial2law_16">"Confirmado gene "</string>
+
+    <string name="tutorial2law_17">"Informe o segundo gene da geração parental tocando no canto superior esquerdo da tela"</string>
+    <string name="tutorial2law_18">"Informe o terceiro gene da geração parental tocando no canto inferior esquerdo da tela"</string>
+    <string name="tutorial2law_19">"Informe o quarto gene da geração parental tocando no canto inferior esquerdo da tela"</string>
+    <string name="tutorial2law_20">"Informe o quinto gene da geração parental tocando no canto superior direito da tela"</string>
+    <string name="tutorial2law_21">"Informe o sexto gene da geração parental tocando no canto superior direito da tela"</string>
+    <string name="tutorial2law_22">"Informe o sétimo gene da geração parental tocando no canto inferior direito da tela"</string>
+    <string name="tutorial2law_23">"Informe o oitavo gene da geração parental tocando no canto inferior direito da tela"</string>
+    <string name="tutorial2law_24">"Muito bem, agora informaremos os genes da geração f1. para iniciar informe o primeiro gene no canto superior esquerdo da tela"</string>
+    <string name="tutorial2law_25">"Informe o segundo  gene da geração f1 tocando no canto superior direito da tela"</string>
+    <string name="tutorial2law_26">"Informe o terceiro gene da geração f1 tocando no canto inferior esquerdo da tela"</string>
+    <string name="tutorial2law_27">"Informe o último gene da geração f1 tocando no canto inferior esquerdo da tela"</string>
+    <string name="tutorial2law_28">"Perfeito, agora iremos informar os elementos da geração F2. para começarmos, toque no canto superior esquerdo da tela"</string>
+    <string name="tutorial2law_29">"Informe o segundo gene da geração f2 tocando no canto inferior esquerdo da tela"</string>
+
+    <string name="tutorial2law_30">"Homozigoto Dominante"</string>
+    <string name="tutorial2law_31">"Heterozigoto"</string>
+    <string name="tutorial2law_32">"Homozigoto recessivo"</string>
+
+    <string name="tutorial2law_33">"Informe o terceiro gene da geração f2 tocando no canto superior esquerdo da tela"</string>
+    <string name="tutorial2law_34">"Informe o quarto gene da geração f2 tocando no canto inferior direito da tela"</string>
+    <string name="tutorial2law_35">"Informe o quinto gene da geração f2 tocando no canto inferior direito da tela"</string>
+    <string name="tutorial2law_36">"Informe o sexto gene da geração f2 tocando no canto inferior esquerdo da tela"</string>
+    <string name="tutorial2law_37">"Informe o sétimo gene da geração f2 tocando no canto superior direito da tela"</string>
+    <string name="tutorial2law_38">"Informe o último gene da geração f2 tocando no canto inferior direito da tela"</string>
+    <string name="tutorial2law_39">"Perfeito, você vai popular o quadro de Punnett de acordo com os resultados da geração F2. após informar cada alelo verificaremos se está correto, caso esteja prosseguimos, caso não esteja correto, repetiremos o processo. lembrando, o quadro deve ser preenchido com os genes da geração f2, vamos nessa, informe o primeiro gene"</string>
+    <string name="tutorial2law_40">"perfeito, informe o segundo gene"</string>
+    <string name="tutorial2law_41">"perfeito, informe o terceiro gene"</string>
+    <string name="tutorial2law_42">"perfeito, informe o quarto gene"</string>
+    <string name="tutorial2law_43">"perfeito, os resultados informados até agora estão corretos, agora informaremos o próximo par, informe o primeiro gene do segundo alelo"</string>
+    <string name="tutorial2law_44">"o resultado informado está incorreto, repita novamenteos genes do primeiro alelo"</string>
+    <string name="tutorial2law_45">"ótimo, agora informe o segundo gene do segundo alelo"</string>
+    <string name="tutorial2law_46">"ótimo, agora informe o terceiro gene do segundo alelo"</string>
+    <string name="tutorial2law_47">"ótimo, agora informe o quarto gene do segundo alelo"</string>
+    <string name="tutorial2law_48">"muito bem, agora iremos verificar os resultados informados."</string>
+    <string name="tutorial2law_49">"perfeito, os resultados informados até agora estão corretos, agora informaremos o próximo par, informe o primeiro gene do terceiro alelo"</string>
+    <string name="tutorial2law_50">"perfeito, informe o segundo gene do terceiro alelo"</string>
+    <string name="tutorial2law_51">"perfeito, informe o terceiro gene do terceiro alelo"</string>
+    <string name="tutorial2law_52">"perfeito, informe o quarto gene do terceiro alelo"</string>
+    <string name="tutorial2law_53">"perfeito, os resultados informados até agora estão corretos, agora informaremos o próximo par, informe o primeiro gene do quarto alelo"</string>
+    <string name="tutorial2law_54">"ótimo, agora informe o segundo gene do quarto alelo"</string>
+    <string name="tutorial2law_55">"ótimo, agora informe o terceiro gene do quarto alelo"</string>
+    <string name="tutorial2law_56">"ótimo, agora informe o quarto gene do quarto alelo"</string>
+    <string name="tutorial2law_57">"muito bem, agora iremos verificar os resultados informados."</string>
+    <string name="tutorial2law_58">"perfeito, os resultados informados até agora estão corretos. como o processo de preenchimento é muito demorado e vimos que aprendeu, iremos conpletar o quadro para você. para isso basta tocar duas vezes na tela"</string>
+    <string name="tutorial2law_59">"A partir desse momento você pode navegar dentro do quadro a através dos toques na tela. para cima você aumenta o índice da coluna, fazendo com que ande nos elementos linha a linha, ao chegar no final da linha irá passar para próxima"
+                                para baixo você decrementa o índice da coluna, fazendo o comportamento inverso ao anterior. caso queira retornar ao menu faça um L ao contrário"</string>
 
 
+    //string tutorial polialelia
+    <string name="tutorial_poli2_0">Vamos Treinar!</string>
+    <string name="tutorial_poli2_1">"Essa é a tela de tutorial do módulo da polialelia. aqui você aprendera como utilizar os mecanismos de resolução utilizados no aplicativo para questões referentes a polialelia.
+            Para começar iremos efetuar o seguinte cruzamento. qual o resultado entre o cruzamento de um coelho selvagem com recessividade himalaia, com um coelho chinchila com recessividade albino
+            para iniciar informaremos os genes parentais. agora deslize para cima no lado esquerdo da tela"</string>
+    <string name="tutorial_poli2_2">"dê dois toques para confirmar"</string>
+    <string name="tutorial_poli2_3">"Toque inválido, o gene informado está incorreto"</string>
+    <string name="tutorial_poli2_4">"você finalizou a questão de tutorial, para retornar ao menu basta fazer um L ao contrário em qualquer parte da tela."</string>
+    <string name="tutorial_poli2_5">"Gene Selvagem"</string>
+    <string name="tutorial_poli2_6">"Gene himalaia"</string>
+    <string name="tutorial_poli2_7">"Gene chinchila"</string>
+    <string name="tutorial_poli2_8">"Gene albino"</string>
+    <string name="tutorial_poli2_9">"Informe mais um gene parental deslizando para baixo no lado esquerdo da tela"</string>
+    <string name="tutorial_poli2_10">"O primeiro alelo gerou um coelho selvagem com recessividade himalaia"</string>
+    <string name="tutorial_poli2_11">"muito bem, agora deslize para cima do lado direito da tela"</string>
+    <string name="tutorial_poli2_12">"você está indo bem. informe mais um gene parental deslizando para baixo do lado direito da tela"</string>
+    <string name="tutorial_poli2_13">"O segundo alelo gerou um coelho chinchila com recessividade albino"</string>
+    <string name="tutorial_poli2_14">"ótimo, agora você irá informar os resultados da geração f2. para isso deslize para cima do lado esquerdo da tela"</string>
+    <string name="tutorial_poli2_15">"Informe o segundo gene do lado direito superior da tela"</string>
+    <string name="tutorial_poli2_16">"O primeiro filho é um coelho selvagem com recessividade chinchila"</string>
+    <string name="tutorial_poli2_17">"muito bem. informe o outro gene da geração F2 deslizando para cima do lado esquerdo da tela"</string>
+    <string name="tutorial_poli2_18">"perfeito. informe o quarto gene da geração f2 no lado direito inferior da tela"</string>
+    <string name="tutorial_poli2_19">"O segundo filho é um coelho selvagem com recessividade albino"</string>
+    <string name="tutorial_poli2_20">"muito bem, deslize para cima no lado direito superior da tela"</string>
+    <string name="tutorial_poli2_21">"muito bem, beslize para baixo do lado esquerdo da tela "</string>
+    <string name="tutorial_poli2_22">"O terceiro filho é um coelho chinchila com recessividade himalaia"</string>
+    <string name="tutorial_poli2_23">"Deslize mais suma vez para baixo do lado esquerdo da tela"</string>
+    <string name="tutorial_poli2_24">"Ótimo. agora deslize para baixo do lado direito da tela"</string>
+    <string name="tutorial_poli2_25">"O quarto filho é um coelho himalaia com recessividade albina"</string>
+    <string name="tutorial_poli2_26">"perfeito, você finalizou a questão de tutorial, para retornar ao menu basta fazer um L ao contrário em qualquer parte da tela."</string>
+    <string name="tutorial_poli2_27">"Você solicitou a ajuda: toda vez que precisar de ajuda basta segurar na tela por dois segundos"</string>
 
 
 </resources>

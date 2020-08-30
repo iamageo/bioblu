@@ -89,12 +89,95 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
 
     private String id_dispositivo;
 
+    String string_solve1;
+    String string_solve2;
+    String string_solve3;
+    String string_solve4;
+    String string_solve5;
+    String string_solve6;
+    String string_solve7;
+    String string_solve8;
+    String string_solve9;
+    String string_solve10;
+    String string_solve11;
+    String string_solve12;
+    String string_solve13;
+    String string_solve14;
+    String string_solve15;
+    String string_solve16;
+    String string_solve17;
+    String string_solve18;
+    String string_solve19;
+    String string_solve20;
+    String string_solve21;
+    String string_solve22;
+    String string_solve23;
+    String string_solve24;
+    String string_solve25;
+    String string_solve26;
+    String string_solve27;
+    String string_solve28;
+    String string_solve29;
+    String string_solve30;
+    String string_solve31;
+    String string_solve32;
+    String string_solve33;
+    String string_solve34;
+    String string_solve35;
+    String string_solve36;
+    String string_solve37;
+    String string_solve38;
+    String string_solve39;
+    String string_solve40;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solve_and_send_question_2law);
-        Bundle dados = getIntent().getExtras();
 
+        string_solve1 = getString(R.string.solve_and_send1);
+        string_solve2 = getString(R.string.solve_and_send2);
+        string_solve3 = getString(R.string.solve_and_send3);
+        string_solve4 = getString(R.string.solve_and_send4);
+        string_solve5 = getString(R.string.solve_and_send5);
+        string_solve6 = getString(R.string.solve_and_send6);
+        string_solve7 = getString(R.string.solve_and_send7);
+        string_solve8 = getString(R.string.solve_and_send8);
+        string_solve9 = getString(R.string.solve_and_send9);
+        string_solve10 = getString(R.string.solve_and_send10);
+        string_solve11 = getString(R.string.solve_and_send11);
+        string_solve12 = getString(R.string.solve_and_send12);
+        string_solve13 = getString(R.string.solve_and_send13);
+        string_solve14 = getString(R.string.solve_and_send14);
+        string_solve15 = getString(R.string.solve_and_send15);
+        string_solve16 = getString(R.string.solve_and_send16);
+        string_solve17 = getString(R.string.solve_and_send17);
+        string_solve18 = getString(R.string.solve_and_send18);
+        string_solve19 = getString(R.string.solve_and_send19);
+        string_solve20 = getString(R.string.solve_and_send20);
+        string_solve21 = getString(R.string.solve_and_send21);
+        string_solve22 = getString(R.string.solve_and_send22);
+        string_solve23 = getString(R.string.solve_and_send23);
+        string_solve24 = getString(R.string.solve_and_send24);
+        string_solve25 = getString(R.string.solve_and_send25);
+        string_solve26 = getString(R.string.solve_and_send26);
+        string_solve27 = getString(R.string.solve_and_send27);
+        string_solve28 = getString(R.string.solve_and_send28);
+        string_solve29 = getString(R.string.solve_and_send29);
+        string_solve30 = getString(R.string.solve_and_send30);
+        string_solve31 = getString(R.string.solve_and_send31);
+        string_solve32 = getString(R.string.solve_and_send32);
+        string_solve33 = getString(R.string.solve_and_send33);
+        string_solve34 = getString(R.string.solve_and_send34);
+        string_solve35 = getString(R.string.solve_and_send35);
+        string_solve36 = getString(R.string.solve_and_send36);
+        string_solve37 = getString(R.string.solve_and_send37);
+        string_solve38 = getString(R.string.solve_and_send38);
+        string_solve39 = getString(R.string.solve_and_send39);
+        string_solve40 = getString(R.string.solve_and_send40);
+
+
+        Bundle dados = getIntent().getExtras();
         questao_recebida = dados.getString("questao");
         email = dados.getString("email");
         gene = dados.getString("letra");
@@ -115,9 +198,9 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
             public void onInit(int status) {
                 ler_velocidade();
                 if (status != TextToSpeech.ERROR) {
-                    textToSpeech.setLanguage(new Locale("pt", "BR"));
+                    textToSpeech.setLanguage(Locale.getDefault());
                     textToSpeech.setSpeechRate(velocidade);
-                    textToSpeech.speak(questao_recebida+'\n'+"com base nos dados da questão, informe os genes da geração f1", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(questao_recebida +'\n'+ string_solve1, TextToSpeech.QUEUE_FLUSH, null);
                 }
             }
         });
@@ -175,7 +258,7 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
             public void onSwipeTopE() {
                 if (gene_x >= 0 && gene_x < 28) {
                     escolhaGeneP = genes[0].toUpperCase();
-                    textToSpeech.speak("Gene " + genes[0] + " dominante dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(string_solve2 + genes[0] + string_solve3, TextToSpeech.QUEUE_FLUSH, null);
                     escolhafala = genes[0].toUpperCase();
                 }  else if (gene_x > 27) {
                     if (ix == 0 & i > 0) {
@@ -200,7 +283,7 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
             public void onSwipeBottomE() {
                 if (gene_x >= 0 && gene_x < 28) {
                     escolhaGeneP = genes[2].toUpperCase();
-                    textToSpeech.speak("Gene " + genes[2] + " dominante dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(string_solve2 + genes[2] + string_solve3, TextToSpeech.QUEUE_FLUSH, null);
                     escolhafala = genes[2].toUpperCase();
                 } else if (gene_x > 27) {
                     if (ix == 0 & i > 0) {
@@ -224,7 +307,7 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
             public void onSwipeTopD() {
                 if (gene_x >= 0 && gene_x < 28) {
                     escolhaGeneP = genes[0].toLowerCase();
-                    textToSpeech.speak("Gene " +  genes[0] + " recessivo dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(string_solve2 +  genes[0] +string_solve4 , TextToSpeech.QUEUE_FLUSH, null);
                     escolhafala =  genes[0].toLowerCase();
                 } else if (gene_x > 27) {
                     if (i == lista_genes.length - 1) {
@@ -250,7 +333,7 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
             public void onSwipeBottomD() {
                 if (gene_x >= 0 && gene_x < 28) {
                     escolhaGeneP = genes[2].toLowerCase();
-                    textToSpeech.speak("Gene " +  genes[2] + " recessivo dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(string_solve2 +  genes[2] + string_solve4, TextToSpeech.QUEUE_FLUSH, null);
                     escolhafala =  genes[2].toLowerCase();
                 } else if (gene_x > 27) {
                     if (i == lista_genes.length - 1) {
@@ -278,10 +361,10 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
             @Override
             public void doubleTap() {
                 if (escolhaGeneP != null) {
-                    textToSpeech.speak("Confirmado Gene " + escolhafala, TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(string_solve5 + escolhafala, TextToSpeech.QUEUE_FLUSH, null);
                     if (gene_x == 0) {
                         geneP[0] = escolhaGeneP;
-                        textToSpeech.speak("Informe o segundo gene da geração f1 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve6, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 1) {
                         geneP[1] = escolhaGeneP;
 
@@ -300,11 +383,11 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
                         }
 
 
-                        textToSpeech.speak("Informe o terceiro gene da geração f1 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve7, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 2) {
                         geneP[2] = escolhaGeneP;
 
-                        textToSpeech.speak("Informe o quarto gene da geração f1 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve8, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 3) {
                         geneP[3] = escolhaGeneP;
 
@@ -322,104 +405,104 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
                             textViewP2.setText(geneP[2] + geneP[3]);
                         }
 
-                        textToSpeech.speak("Muito bem, informe o primeiro gene da geração F2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve9, TextToSpeech.QUEUE_ADD, null);
                     }
 
                     if (gene_x == 4) {
                         resultadoGene[0] = escolhaGeneP;
                         escolhaGeneP = null;
-                        textToSpeech.speak("Informe o segundo gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve10, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 5) {
                         resultadoGene[1] = escolhaGeneP;
                         escolhaGeneP = null;
                         resultado[0] = resultadoGene[0] + resultadoGene[1];
                         textViewF2_1.setText(resultado[0]);
                         if (resultadoGene[0].equals(resultadoGene[0].toUpperCase()) && resultadoGene[1].equals(resultadoGene[1].toUpperCase())) {
-                            gene_selecionado1[0] = "Homozigoto Dominante";
+                            gene_selecionado1[0] = string_solve11;
                             imageViewF2_1.setImageResource(R.drawable.quadrado_normal);
                         } else if (resultadoGene[0].equals(resultadoGene[0].toUpperCase()) && resultadoGene[1].equals(resultadoGene[1].toLowerCase())) {
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = string_solve12;
                             imageViewF2_1.setImageResource(R.drawable.quadrado_normal);
                         } else if (resultadoGene[0].equals(resultadoGene[0].toLowerCase()) && resultadoGene[1].equals(resultadoGene[1].toUpperCase())) {
-                            gene_selecionado1[0] = "Heterozigoto";
+                            gene_selecionado1[0] = string_solve12;
                             imageViewF2_1.setImageResource(R.drawable.quadrado_normal);
                         } else {
-                            gene_selecionado1[0] = "Homozigoto recessivo";
+                            gene_selecionado1[0] = string_solve13;
                             imageViewF2_1.setImageResource(R.drawable.quadrado_preenchido);
                         }
-                        textToSpeech.speak("Informe o terceiro gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve14, TextToSpeech.QUEUE_ADD, null);
 
                     } else if (gene_x == 6) {
 
                         resultadoGene[2] = escolhaGeneP;
                         escolhaGeneP = null;
-                        textToSpeech.speak("Informe o quarto gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve15, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 7) {
                         resultadoGene[3] = escolhaGeneP;
                         escolhaGeneP = null;
                         resultado[1] = resultadoGene[2] + resultadoGene[3];
                         textViewF2_2.setText(resultado[1]);
                         if (resultadoGene[2].equals(resultadoGene[2].toUpperCase()) && resultadoGene[3].equals(resultadoGene[3].toUpperCase())) {
-                            gene_selecionado1[1] = "Homozigoto Dominante";
+                            gene_selecionado1[1] =string_solve11;
                             imageViewF2_2.setImageResource(R.drawable.quadrado_normal);
                         } else if (resultadoGene[2].equals(resultadoGene[2].toUpperCase()) && resultadoGene[3].equals(resultadoGene[3].toLowerCase())) {
-                            gene_selecionado1[1] = "Heterozigoto";
+                            gene_selecionado1[1] =string_solve12;
                             imageViewF2_2.setImageResource(R.drawable.quadrado_normal);
                         } else if (resultadoGene[2].equals(resultadoGene[2].toLowerCase()) && resultadoGene[3].equals(resultadoGene[3].toUpperCase())) {
-                            gene_selecionado1[1] = "Heterozigoto";
+                            gene_selecionado1[1] =string_solve12;
                             imageViewF2_2.setImageResource(R.drawable.quadrado_normal);
                         } else {
-                            gene_selecionado1[1] = "Homozigoto recessivo";
+                            gene_selecionado1[1] = string_solve13;
                             imageViewF2_2.setImageResource(R.drawable.quadrado_preenchido);
                         }
-                        textToSpeech.speak("Informe o quinto gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve16, TextToSpeech.QUEUE_ADD, null);
 
                     } else if (gene_x == 8) {
 
                         resultadoGene[4] = escolhaGeneP;
                         escolhaGeneP = null;
-                        textToSpeech.speak("Informe o sexto gene da geração f2 ", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve17, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 9) {
                         resultadoGene[5] = escolhaGeneP;
                         escolhaGeneP = null;
                         resultado[2] = resultadoGene[4] + resultadoGene[5];
                         textViewF2_3.setText(resultado[2]);
                         if (resultadoGene[4].equals(resultadoGene[4].toUpperCase()) && resultadoGene[5].equals(resultadoGene[5].toUpperCase())) {
-                            gene_selecionado1[2] = "Homozigoto Dominante";
+                            gene_selecionado1[2] = string_solve11;
                             imageViewF2_3.setImageResource(R.drawable.quadrado_normal);
                         } else if (resultadoGene[4].equals(resultadoGene[4].toUpperCase()) && resultadoGene[5].equals(resultadoGene[5].toLowerCase())) {
-                            gene_selecionado1[2] = "Heterozigoto";
+                            gene_selecionado1[2] = string_solve12;
                             imageViewF2_3.setImageResource(R.drawable.quadrado_normal);
                         } else if (resultadoGene[4].equals(resultadoGene[4].toLowerCase()) && resultadoGene[5].equals(resultadoGene[5].toUpperCase())) {
-                            gene_selecionado1[2] = "Heterozigoto";
+                            gene_selecionado1[2] =string_solve12;
                             imageViewF2_3.setImageResource(R.drawable.quadrado_normal);
                         } else {
-                            gene_selecionado1[2] = "Homozigoto recessivo";
+                            gene_selecionado1[2] =string_solve13;
                             imageViewF2_3.setImageResource(R.drawable.quadrado_preenchido);
                         }
-                        textToSpeech.speak("Informe o sétimo gene da geração f2", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve18, TextToSpeech.QUEUE_ADD, null);
 
                     } else if (gene_x == 10) {
 
                         resultadoGene[6] = escolhaGeneP;
                         escolhaGeneP = null;
-                        textToSpeech.speak("Informe o último gene da geração f2", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve19, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 11) {
                         resultadoGene[7] = escolhaGeneP;
                         escolhaGeneP = null;
                         resultado[3] = resultadoGene[6] + resultadoGene[7];
                         textViewF2_4.setText(resultado[3]);
                         if (resultadoGene[6].equals(resultadoGene[6].toUpperCase()) && resultadoGene[7].equals(resultadoGene[7].toUpperCase())) {
-                            gene_selecionado1[3] = "Homozigoto Dominante";
+                            gene_selecionado1[3] = string_solve11;
                             imageViewF2_4.setImageResource(R.drawable.quadrado_normal);
                         } else if (resultadoGene[6].equals(resultadoGene[6].toUpperCase()) && resultadoGene[7].equals(resultadoGene[7].toLowerCase())) {
-                            gene_selecionado1[3] = "Heterozigoto";
+                            gene_selecionado1[3] = string_solve12;
                             imageViewF2_4.setImageResource(R.drawable.quadrado_normal);
                         } else if (resultadoGene[6].equals(resultadoGene[6].toLowerCase()) && resultadoGene[7].equals(resultadoGene[7].toUpperCase())) {
-                            gene_selecionado1[3] = "Heterozigoto";
+                            gene_selecionado1[3] = string_solve12;
                             imageViewF2_4.setImageResource(R.drawable.quadrado_normal);
                         } else {
-                            gene_selecionado1[3] = "Homozigoto recessivo";
+                            gene_selecionado1[3] = string_solve13;
                             imageViewF2_4.setImageResource(R.drawable.quadrado_preenchido);
                         }
 
@@ -430,43 +513,43 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
                             }
                         }
 
-                        textToSpeech.speak("Perfeito, você vai popular o quadro de Punnett de acordo com os resultados da geração F2" + '\n' + "lembrando, o quadro deve ser preenchido com os genes da geração f2, vamos nessa, informe o primeiro gene", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve20, TextToSpeech.QUEUE_ADD, null);
                         // colocar os genes gerados aqui
                         /** Quadro de Punnet aqui **/
                     } else if (gene_x == 12) { /* linha 0, coluna 0*/
                         valor_matriz[0] = escolhaGeneP;
-                        textToSpeech.speak("perfeito, informe o segundo gene", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve21, TextToSpeech.QUEUE_ADD, null);
                     } else  if (gene_x == 13) {
                         valor_matriz[1] = escolhaGeneP;
                         matriz_resultado[0][0] = valor_matriz[0] + valor_matriz[1];
-                        textToSpeech.speak("perfeito, informe o terceiro gene", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve22, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 14) { /* linha 0, coluna 1*/
                         valor_matriz[2] = escolhaGeneP;
-                        textToSpeech.speak("perfeito, informe o quarto gene", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve23, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 15) {
                         valor_matriz[3] = escolhaGeneP;
                         lista_genes[0] = valor_matriz[0] + valor_matriz[1] + valor_matriz[2] + valor_matriz[3];
                         matriz_resultado[0][1] = valor_matriz[2] + valor_matriz[3];
                         textView1.setText(lista_genes[0]); // final primeiro alelo
 
-                        textToSpeech.speak("muito bem, agora informe o primeiro gene do segundo alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve24, TextToSpeech.QUEUE_ADD, null);
 
                     } else if (gene_x == 16) { /* linha 0, coluna 1*/
                         valor_matriz[4] = escolhaGeneP;
-                        textToSpeech.speak("ótimo, agora informe o segundo gene do segundo alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve25, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 17) {
-                        textToSpeech.speak("ótimo, agora informe o terceiro gene do segundo alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve26, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[5] = escolhaGeneP;
                         escolhaGeneP = null;
                         matriz_resultado[0][2] = valor_matriz[4] + valor_matriz[5];
 
 
                     } else if (gene_x == 18) { /* linha 0, coluna 2*/
-                        textToSpeech.speak("ótimo, agora informe o quarto gene do segundo alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve27, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[6] = escolhaGeneP;
                         escolhaGeneP = null;
                     } else if (gene_x == 19) {
-                        textToSpeech.speak("muito bem, agora informe o primeiro gene do terceiro alelo.", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve28, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[7] = escolhaGeneP;
                         lista_genes[1] = valor_matriz[4] + valor_matriz[5] + valor_matriz[6] + valor_matriz[7];
                         matriz_resultado[0][3] = valor_matriz[6] + valor_matriz[7];
@@ -474,34 +557,34 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
 
                    }  else if (gene_x == 20) { /* linha 0, coluna 3*/
                         valor_matriz[8] = escolhaGeneP;
-                        textToSpeech.speak("perfeito, informe o segundo gene do terceiro alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve29, TextToSpeech.QUEUE_ADD, null);
                     } else  if (gene_x == 21) {
                         valor_matriz[9] = escolhaGeneP;
                         matriz_resultado[1][0] = valor_matriz[8] + valor_matriz[9];
-                        textToSpeech.speak("perfeito, informe o terceiro gene do terceiro alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve30, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 22) { /* linha 0, coluna 1*/
                         valor_matriz[10] = escolhaGeneP;
-                        textToSpeech.speak("perfeito, informe o quarto gene do terceiro alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve31, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 23) {
                         valor_matriz[11] = escolhaGeneP;
                         lista_genes[2] = valor_matriz[8] + valor_matriz[9] + valor_matriz[10] + valor_matriz[11];
                         matriz_resultado[1][1] = valor_matriz[2] + valor_matriz[3];
                         textView3.setText(lista_genes[2]); // final primeiro alelo
 
-                        textToSpeech.speak("muito bem, agora informe o primeiro gene do quarto alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve32, TextToSpeech.QUEUE_ADD, null);
 
                     }else if (gene_x == 24) { /* linha 0, coluna 4*/
                         valor_matriz[12] = escolhaGeneP;
-                        textToSpeech.speak("ótimo, agora informe o segundo gene do quarto alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve33, TextToSpeech.QUEUE_ADD, null);
                     } else if (gene_x == 25) {
-                        textToSpeech.speak("ótimo, agora informe o terceiro gene do quarto alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve34, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[13] = escolhaGeneP;
                         escolhaGeneP = null;
                         matriz_resultado[1][2] = valor_matriz[12] + valor_matriz[13];
 
 
                     } else if (gene_x == 26) { /* linha 0, coluna 2*/
-                        textToSpeech.speak("ótimo, agora informe o quarto gene do quarto alelo", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve35, TextToSpeech.QUEUE_ADD, null);
                         valor_matriz[14] = escolhaGeneP;
                         escolhaGeneP = null;
                     } else if (gene_x == 27) {
@@ -510,7 +593,7 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
                         matriz_resultado[1][3] = valor_matriz[14] + valor_matriz[15];
                         textView4.setText(lista_genes[3]);
 
-                        textToSpeech.speak("perfeito, como o processo de preenchimento é muito demorado evimos que aprendeu, iremos conpletar o quadro para você" + '\n' + "para isso basta tocar duas vezes na tela", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve36, TextToSpeech.QUEUE_ADD, null);
 
                     } else if (gene_x == 28) {
 
@@ -562,7 +645,7 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
                         classificacao[14] = gene_selecionado1[3] + " e " + gene_selecionado1[2];
                         classificacao[15] = gene_selecionado1[3] + " e " + gene_selecionado1[3];
 
-                        textToSpeech.speak("Para submeter a sua resposta clique e segure na tela por 2 segundos" + '\n' + "para escutar o resultado obtido basta deslizar para cima ou para baixo para navegar entre os itens "+'\n'+ "caso queira retornar ao menu faça um L ao contrário", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(string_solve37 + '\n' + string_solve40, TextToSpeech.QUEUE_ADD, null);
 
                     }
                 }
@@ -642,12 +725,12 @@ public class activity_solve_and_send_question_2law extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                textToSpeech.speak("A solução foi enviada com sucesso!", TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(string_solve38, TextToSpeech.QUEUE_FLUSH, null);
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                textToSpeech.speak("Houve um erro ao submeter a solução, por favor, tente novamente!", TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(string_solve39, TextToSpeech.QUEUE_FLUSH, null);
             }
         }){
             @Override

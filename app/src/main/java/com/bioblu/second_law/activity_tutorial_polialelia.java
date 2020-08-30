@@ -31,14 +31,71 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
     /**
      * String com informações de como usar o app
      **/
-    private String primeirafala = "Essa é a tela de tutorial do módulo da polialelia" + '\n' + "aqui você aprendera como utilizar os mecanismos de resolução utilizados no aplicativo para questões referentes a polialelia" + '\n' +
-            " Para começar iremos efetuar o seguinte cruzamento" + '\n' + "qual o resultado entre o cruzamento de um coelho selvagem com recessividade himalaia, com um coelho chinchila com recessividade albino " + '\n' +
-            " para iniciar informaremos os genes parentais..." + '\n' + " agora deslize para cima no lado esquerdo da tela";
+
+    String poli1;
+    String poli2;
+    String poli3;
+    String poli4;
+    String poli5;
+    String poli6;
+    String poli7;
+    String poli8;
+    String poli9;
+    String poli10;
+    String poli11;
+    String poli12;
+    String poli13;
+    String poli14;
+    String poli15;
+    String poli16;
+    String poli17;
+    String poli18;
+    String poli19;
+    String poli20;
+    String poli21;
+    String poli22;
+    String poli23;
+    String poli24;
+    String poli25;
+    String poli26;
+    String poli27;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_polialelia);
+
+        poli1= getString(R.string.tutorial_poli2_1);
+        poli2= getString(R.string.tutorial_poli2_2);
+        poli3= getString(R.string.tutorial_poli2_3);
+        poli4= getString(R.string.tutorial_poli2_4);
+        poli5= getString(R.string.tutorial_poli2_5);
+        poli6= getString(R.string.tutorial_poli2_6);
+        poli7= getString(R.string.tutorial_poli2_7);
+        poli8= getString(R.string.tutorial_poli2_8);
+        poli9= getString(R.string.tutorial_poli2_9);
+        poli10= getString(R.string.tutorial_poli2_10);
+        poli11= getString(R.string.tutorial_poli2_11);
+        poli12= getString(R.string.tutorial_poli2_12);
+        poli13= getString(R.string.tutorial_poli2_13);
+        poli14= getString(R.string.tutorial_poli2_14);
+        poli15= getString(R.string.tutorial_poli2_15);
+        poli16= getString(R.string.tutorial_poli2_16);
+        poli17= getString(R.string.tutorial_poli2_17);
+        poli18= getString(R.string.tutorial_poli2_18);
+        poli19= getString(R.string.tutorial_poli2_19);
+        poli20= getString(R.string.tutorial_poli2_20);
+        poli21= getString(R.string.tutorial_poli2_21);
+        poli22= getString(R.string.tutorial_poli2_22);
+        poli23= getString(R.string.tutorial_poli2_23);
+        poli24= getString(R.string.tutorial_poli2_24);
+        poli25= getString(R.string.tutorial_poli2_25);
+        poli26= getString(R.string.tutorial_poli2_26);
+        poli27= getString(R.string.tutorial_poli2_27);
+
+
+
         Bundle dados = getIntent().getExtras();
         velocidade = dados.getInt("velocidade");
 
@@ -71,7 +128,7 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
                     textToSpeech.setLanguage(Locale.getDefault());
                     textToSpeech.setSpeechRate(velocidade);
                     textToSpeech.setPitch(1);
-                    textToSpeech.speak(primeirafala, textToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli1, textToSpeech.QUEUE_FLUSH, null);
                 }
             }
         });
@@ -99,12 +156,12 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
             @Override
             public void onSwipeTopE() {
                 if (x == 1 || x == 5 || x == 7) {
-                    textToSpeech.speak("Gene Selvagem" + '\n' + "dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli5 + '\n' + poli2, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "C";
                 } else if (x == 2 || x == 10 || x == 11 || x == 3 || x == 6 || x == 9 || x == 4 || x == 8 || x == 12){
-                    textToSpeech.speak("Toque inválido, o gene informado está incorreto", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli3, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x > 12){
-                    textToSpeech.speak("você finalizou a questão de tutorial, para retornar ao menu basta fazer um L ao contrário em qualquer parte da tela.", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli4, TextToSpeech.QUEUE_FLUSH, null);
                 }
 
             }
@@ -112,12 +169,12 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
             @Override
             public void onSwipeBottomE() {
                 if(x == 2 || x == 10 || x == 11) {
-                    textToSpeech.speak("Gene himalaia" + '\n' + "dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli6 + '\n' + poli2, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "Ch";
                 } else if (x == 1 || x == 5 || x == 7 || x == 3 || x == 6 || x == 9 || x == 4 || x == 8 || x == 12) {
-                    textToSpeech.speak("Toque inválido, o gene informado está incorreto", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli3, TextToSpeech.QUEUE_FLUSH, null);
                 }else if (x > 12){
-                    textToSpeech.speak("você finalizou a questão de tutorial, para retornar ao menu basta fazer um L ao contrário em qualquer parte da tela.", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli4, TextToSpeech.QUEUE_FLUSH, null);
                 }
 
 
@@ -126,12 +183,12 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
             @Override
             public void onSwipeTopD() {
                 if(x == 3 || x == 6 || x == 9) {
-                    textToSpeech.speak("Gene chinchila" + '\n' + "dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli7 + '\n' + poli2, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "CCh";
                 } else if (x == 1 || x == 5 || x == 7 || x == 2 || x == 10 || x == 11 || x == 4 || x == 8 || x == 12) {
-                    textToSpeech.speak("Toque inválido, o gene informado está incorreto", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli3, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x > 12){
-                    textToSpeech.speak("você finalizou a questão de tutorial, para retornar ao menu basta fazer um L ao contrário em qualquer parte da tela.", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli4, TextToSpeech.QUEUE_FLUSH, null);
                 }
 
             }
@@ -139,12 +196,12 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
             @Override
             public void onSwipeBottomD() {
                 if(x == 4 || x == 8 || x == 12) {
-                    textToSpeech.speak("Gene albino" + '\n' + "dê dois toques para confirmar", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak( poli8 + '\n' + poli2, TextToSpeech.QUEUE_FLUSH, null);
                     escolha = "Ca";
                 } else if (x == 1 || x == 5 || x == 7 || x == 2 || x == 10 || x == 11 || x == 3 || x == 6 || x == 9) {
-                    textToSpeech.speak("Toque inválido, o gene informado está incorreto", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli3, TextToSpeech.QUEUE_FLUSH, null);
                 } else if (x > 12){
-                    textToSpeech.speak("você finalizou a questão de tutorial, para retornar ao menu basta fazer um L ao contrário em qualquer parte da tela.", TextToSpeech.QUEUE_FLUSH, null);
+                    textToSpeech.speak(poli4, TextToSpeech.QUEUE_FLUSH, null);
                 }
 
             }
@@ -154,33 +211,33 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
                 if (x >= 1 && escolha != null) {
                     if (x == 1) {
                         genep1 = escolha;
-                        textToSpeech.speak("Informe mais um gene parental deslizando para baixo no lado esquerdo da tela", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(poli9, TextToSpeech.QUEUE_FLUSH, null);
                         imageViewTutorial.setImageResource(R.drawable.img2);
                     } else if (x == 2) {
                         genep2 = escolha;
                         if (genep1.equals("C") && genep2.equals("Ch")) {
                             imageViewP1.setImageResource(R.drawable.selvagem);
                             textViewP1.setText("C Ch");
-                            textToSpeech.speak("O primeiro alelo gerou um coelho selvagem com recessividade himalaia", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("muito bem, agora deslize para cima do lado direito da tela", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli10, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli11, TextToSpeech.QUEUE_ADD, null);
                             imageViewTutorial.setImageResource(R.drawable.img3);
                         }
                     } else if (x == 3) {
                         genep3 = escolha;
-                        textToSpeech.speak("você está indo bem" + '\n' + "informe mais um gene parental deslizando para baixo do lado direito da tela", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(poli12, TextToSpeech.QUEUE_FLUSH, null);
                         imageViewTutorial.setImageResource(R.drawable.img3);
                     } else if (x == 4) {
                         genep4 = escolha;
                         if (genep3.equals("CCh") && genep4.equals("Ca")) {
                             imageViewP12.setImageResource(R.drawable.chinchila);
                             textViewP12.setText("CCh Ca");
-                            textToSpeech.speak("O segundo alelo gerou um coelho chinchila com recessividade albino", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("ótimo, agora você irá informar os resultados da geração f2 " + '\n' + " para isso deslize para cima do lado esquerdo da tela", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli13, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli14, TextToSpeech.QUEUE_ADD, null);
                             imageViewTutorial.setImageResource(R.drawable.img2);
                         }
                     } else if (x == 5) {
                         genef1_1 = escolha;
-                        textToSpeech.speak("Informe o segundo gene do lado direito superior da tela", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(poli15, TextToSpeech.QUEUE_ADD, null);
                         imageViewTutorial.setImageResource(R.drawable.img3);
                     } else if (x == 6) {
                         genef1_2 = escolha;
@@ -188,37 +245,37 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
                             imageViewTutorial.setImageResource(R.drawable.img2);
                             filho1.setImageResource(R.drawable.selvagem);
                             textViewFilho1.setText("C CCh");
-                            textToSpeech.speak("O primeiro filho é um coelho selvagem com recessividade chinchila", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("muito bem " + '\n' + "informe o outro gene da geração F2 deslizando para cima do lado esquerdo da tela", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli16, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli17, TextToSpeech.QUEUE_ADD, null);
                         }
                     } else if (x == 7) {
                         genef1_3 = escolha;
-                        textToSpeech.speak("perfeito " + '\n' + " informe o quarto gene da geração f2 no lado direito inferior da tela", TextToSpeech.QUEUE_ADD, null);
+                        textToSpeech.speak(poli18, TextToSpeech.QUEUE_ADD, null);
                         imageViewTutorial.setImageResource(R.drawable.img3);
                     } else if (x == 8) {
                         genef1_4 = escolha;
                         if (genef1_3.equals("C") && genef1_4.equals("Ca")) {
                             filho2.setImageResource(R.drawable.selvagem);
                             textViewFilho2.setText("C Ca");
-                            textToSpeech.speak("O segundo filho é um coelho selvagem com recessividade albino", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("muito bem, deslize para cima no lado direito superior da tela", TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli19, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli20, TextToSpeech.QUEUE_ADD, null);
                             imageViewTutorial.setImageResource(R.drawable.img3);
                         } // aqui
                     } else if (x == 9) {
                         c1 = escolha;
-                        textToSpeech.speak("muito bem, beslize para baixo do lado esquerdo da tela ", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(poli21, TextToSpeech.QUEUE_FLUSH, null);
                         imageViewTutorial.setImageResource(R.drawable.img2);
                     } else if (x == 10) {
                         d1 = escolha;
                         if (c1.equals("CCh") && d1.equals("Ch")) {
                             filho3.setImageResource(R.drawable.chinchila);
                             textViewFilho3.setText("CCh Ch");
-                            textToSpeech.speak("O terceiro filho é um coelho chinchila com recessividade himalaia", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("Deslize mais suma vez para baixo do lado esquerdo da tela", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(poli22, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli23, TextToSpeech.QUEUE_FLUSH, null);
                         }
                     } else if (x == 11) {
                         c2 = escolha;
-                        textToSpeech.speak("Ótimo " + '\n' + " agora deslize para baixo do lado direito da tela", TextToSpeech.QUEUE_FLUSH, null);
+                        textToSpeech.speak(poli24, TextToSpeech.QUEUE_FLUSH, null);
                         imageViewTutorial.setImageResource(R.drawable.img3);
                     } else if (x == 12) {
                         d2 = escolha;
@@ -226,8 +283,8 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
                             filho4.setImageResource(R.drawable.himalaia);
                             textViewFilho4.setText("Ch Ca");
                             imageViewTutorial.setImageResource(R.drawable.img2);
-                            textToSpeech.speak("O quarto filho é um coelho himalaia com recessividade albina", TextToSpeech.QUEUE_ADD, null);
-                            textToSpeech.speak("perfeito, você finalizou a questão de tutorial, para retornar ao menu basta fazer um L ao contrário em qualquer parte da tela.", TextToSpeech.QUEUE_FLUSH, null);
+                            textToSpeech.speak(poli25, TextToSpeech.QUEUE_ADD, null);
+                            textToSpeech.speak(poli26, TextToSpeech.QUEUE_FLUSH, null);
                         }
                     }
                 } else {
@@ -239,7 +296,7 @@ public class activity_tutorial_polialelia extends AppCompatActivity {
             /*dica da questão*/
             @Override
             public void onLongPressTutorial() {
-                textToSpeech.speak("Você solicitou a ajuda: toda vez que precisar de ajuda basta segurar na tela por dois segundos", TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(poli27, TextToSpeech.QUEUE_FLUSH, null);
             }
             /*ir para o meu */
 
